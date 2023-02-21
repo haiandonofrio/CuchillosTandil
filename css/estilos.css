@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:ital,wght@0,200;0,400;1,300&family=Ms+Madi&family=Roboto&family=Roboto+Mono&family=Sofia+Sans:ital,wght@0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@300;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@300;700&family=Rock+Salt&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Lobster&family=Roboto+Slab:wght@300;700&family=Rock+Salt&display=swap');
+
+@font-face {
+    font-family: Gothic;
+    src: url(../assets/fonts/Gothical.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*El header es desplazable*/
+.header{
+    background: #1c1a1a;
+    background: linear-gradient(90deg,#1c1a1a 0%, #383832 40%, #656965 80%);
+    background: -webkit-linear-gradient(90deg,#1c1a1a 0%, #383832 40%, #656965 80%);
+    background: -moz-linear-gradient(90deg,#1c1a1a 0%, #383832 40%, #656965 80%);
+    z-index: 100;
+    opacity: 90%;
+}
+
+.headercolor{
+    background: #1c1a1a;
+    background: linear-gradient(90deg,#1c1a1a 0%, #383832 40%, #656965 80%);
+    background: -webkit-linear-gradient(90deg,#1c1a1a 0%, #383832 40%, #656965 80%);
+    background: -moz-linear-gradient(90deg,#1c1a1a 0%, #383832 40%, #656965 80%);
+    
+}
+/*El logo mas adelante reemplaza al hipervinculo de inicio*/
+.logo{
+    border-radius: 148px 148px 148px 148px;
+    -webkit-border-radius: 148px 148px 148px 148px;
+    -moz-border-radius: 148px 148px 148px 148px;
+    margin-left: 150%;
+}
+
+.links{
+    font-family: 'Titillium Web', sans-serif;
+    z-index: 10;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 120%;
+    border: 1mm solid;
+    border-color: rgb(0, 0, 0);
+    color: rgb(187, 187, 187) !important
+}
+
+
+/*Index*/
+/* Carousel*/
+.carousel {
+    margin-bottom: 4rem;
+}
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+.carousel-item {
+    height: 32rem;
+}
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+/*Botones*/
+.bgBoton{
+    background-color: #9c9695 !important;
+}
+
+.FormBoton{
+    background-color: #2d2d2da5 !important;
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 120%;
+    color: #c4c3c3;
+}
+
+/*Index*/
+/* Carousel*/
+
+
+/*Titulos*/
+/*index*/
+.tittle{
+    font-family: Gothic;
+    font-size: 7em;
+    text-align: center;
+    color: rgb(206, 202, 202)
+}
+/*Otras paginas*/
+.tittle2{
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Rock Salt', cursive;  
+    color: rgb(206, 202, 202);
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.subti{
+    font-family: 'Creepster', cursive;
+    font-size: 3em;
+    margin-left: 3%;
+    color: rgb(196, 196, 196)
+}
+/*Titulos*/
+
+/*Parrafos*/
+.parr{
+    /*font-family: 'Titillium Web', sans-serif;*/
+    font-family: 'Creepster', cursive;
+    font-size: 1.5em;
+    text-align: left;
+    color: rgb(196, 196, 196);
+}
+
+.parrIndex{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2em;
+    text-align: left;
+    color: rgb(196, 196, 196);
+}
+
+.parrlink{
+    font-family: 'Creepster', cursive;
+    color: rgb(196, 196, 196);
+}
+/*Parrafos*/
+
+.centrarTexto{
+    text-align: center;
+}
+
+/*Contacto*/
+.mapa{
+    object-fit: cover; 
+    height: 50vh;
+    width: 100%;
+}
+/*Nosotros*/
+.tatuador1{
+    width: 50%;
+    height: 40%;
+}
+
+/*Footer*/
+
+.piePag{
+    text-decoration: none;
+    background: #1c1a1a;
+    background: linear-gradient(90deg,#1c1a1a 0%, #383832 40%, #656965 80%);
+    background: -webkit-linear-gradient(90deg,#1c1a1a 0%, #383832 40%, #656965 80%);
+    background: -moz-linear-gradient(90deg,#1c1a1a 0%, #383832 40%, #656965 80%);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-top: 1mm solid;
+    border-bottom: 1mm solid;
+    border-color: black;
+}
+
+/*Icono red social*/
+.instagram{
+    color: #e6dfe2;
+    font-size: 2em;
+    /*text-decoration: none;*/
+    padding: 2% 0;
+}
+
+.foottxt{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+}
+/*Footer*/
+
+.bgcolor{
+    background: url(../assets/img/bg-black.jpg) repeat;
+
+}
+
+.imglogo{
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+.map{
+    color: white;
+}
+
+/*Galeria*/
+.imggaleria{
+    height:550px !important;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease-in-out;
+}
+
+.imggaleria:hover{
+    filter: brightness(100%) sepia(30%) contrast(1.8) drop-shadow(0 0 10px rgb(155, 154, 154));
+    transform: scale(1.2);
+    opacity: 1;
+    z-index: 10;
+    overflow:hidden;
+    cursor:zoom-in;
+    align-self: center;
+}
+
+.img2{
+    margin-left: 5%;
+}
+
+.GalTitulo{
+    height: 85vh; 
+    margin: 0 auto; 
+    /*background: #0000001b; */
+    border-radius: 18px 18px 18px 18px; 
+    border-radius: 10px 10px 10px 10px; 
+    -webkit-border-radius: 10px 10px 10px 10px; 
+    -moz-border-radius: 10px 10px 10px 10px; 
+    border: 5px outset rgba(24, 24, 24, 0.695); 
+}
+
+.imgtittle{
+    width: 0px;/*unidad de media relativa*/
+    height: 100%;
+    filter: brightness(80%) contrast(120%);
+    flex-grow: 1;
+    border:2px outset rgba(24, 24, 24, 0.386); 
+    object-fit: cover;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+.imgtittle:hover{
+    width: 10%;
+    opacity: 1.2;
+    filter:contrast(1.2) brightness(120%) drop-shadow(0 0 10px rgb(129, 129, 129)); ;
+}
+
+/*Media Mobile */
+@media screen and (max-width: 767px) {
+	.subti {
+		text-align: center;
+	}
+    .parr {
+        font-size: 1em;
+    }
+    .subtibordes{
+        margin: 0 auto;
+    }
+    .logo{
+        margin-left: 100%;
+    }
+    .foottxt{
+        text-align: center;;
+    }
+    .instagram{
+        font-size: 2em;
+    }
+
+    .order-xs-first{
+        order: -1;
+    }
+}
