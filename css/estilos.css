@@ -286,4 +286,7 @@
     .order-xs-first{
         order: -1;
     }
+    .tittle{
+        font-size: 5em;
+    }
 }
