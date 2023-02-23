@@ -1,0 +1,57 @@
+/*Media Mobile */
+@media screen and (max-width: 767px) {
+	.subti {
+		text-align: center;
+	}
+    .parr {
+        font-size: 1em;
+    }
+    .subtibordes{
+        margin: 0 auto;
+    }
+    .logo{
+        margin-left: 100%;
+    }
+    .foottxt{
+        text-align: center;;
+    }
+    .instagram{
+        font-size: 2em;
+    }
+
+    .order-xs-first{
+        order: -1;
+    }
+    .tittle{
+        font-size: 5em;
+    }
+    .tittle2{
+        font-size: 3em;
+    }
+
+    .subti{
+        font-size: 2em;
+    }
+
+    .links{
+        font-size: 1em;
+    }
+
+    .parr{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 468px) {
+
+    .imggaleria:hover{
+        filter: brightness(100%) sepia(30%) contrast(1.8) drop-shadow(0 0 10px rgb(155, 154, 154));
+        transform: none;
+        opacity: 1;
+        z-index: 10;
+        overflow:hidden;
+        cursor:zoom-in;
+        align-self: center;
+    }
+    
+}

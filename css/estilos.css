@@ -3,10 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@300;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@300;700&family=Rock+Salt&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Creepster&family=Lobster&family=Roboto+Slab:wght@300;700&family=Rock+Salt&display=swap");
-@font-face {
-  font-family: Gothic;
-  src: url(../assets/fonts/Gothical.ttf); }
-
+/*crear variables*/
+/*inicializacion*/
 * {
   margin: 0;
   padding: 0;
@@ -43,6 +41,47 @@
   border: 1mm solid;
   border-color: black;
   color: #bbbbbb !important; }
+
+/*Media Mobile */
+@media screen and (max-width: 767px) {
+  .subti {
+    text-align: center; }
+  .parr {
+    font-size: 1em; }
+  .subtibordes {
+    margin: 0 auto; }
+  .logo {
+    margin-left: 100%; }
+  .foottxt {
+    text-align: center; }
+  .instagram {
+    font-size: 2em; }
+  .order-xs-first {
+    order: -1; }
+  .tittle {
+    font-size: 5em; }
+  .tittle2 {
+    font-size: 3em; }
+  .subti {
+    font-size: 2em; }
+  .links {
+    font-size: 1em; }
+  .parr {
+    font-size: 1em; } }
+
+@media screen and (max-width: 468px) {
+  .imggaleria:hover {
+    filter: brightness(100%) sepia(30%) contrast(1.8) drop-shadow(0 0 10px #9b9a9a);
+    transform: none;
+    opacity: 1;
+    z-index: 10;
+    overflow: hidden;
+    cursor: zoom-in;
+    align-self: center; } }
+
+@font-face {
+  font-family: Gothic;
+  src: url(../assets/fonts/Gothical.ttf); }
 
 /*Index*/
 /* Carousel*/
@@ -96,7 +135,7 @@
   text-align: center; }
 
 .subti {
-  font-family: 'Creepster', cursive;
+  font-family: "Creepster", cursive;
   font-size: 3em;
   margin-left: 3%;
   color: #c4c4c4; }
@@ -105,7 +144,7 @@
 /*Parrafos*/
 .parr {
   /*font-family: 'Titillium Web', sans-serif;*/
-  font-family: 'Creepster', cursive;
+  font-family: "Creepster", cursive;
   font-size: 1.5em;
   text-align: left;
   color: #c4c4c4; }
@@ -117,7 +156,7 @@
   color: #c4c4c4; }
 
 .parrlink {
-  font-family: 'Creepster', cursive;
+  font-family: "Creepster", cursive;
   color: #c4c4c4; }
 
 /*Parrafos*/
@@ -222,40 +261,3 @@
   width: 10%;
   opacity: 1.2;
   filter: contrast(1.2) brightness(120%) drop-shadow(0 0 10px #818181); }
-
-/*Media Mobile */
-@media screen and (max-width: 767px) {
-  .subti {
-    text-align: center; }
-  .parr {
-    font-size: 1em; }
-  .subtibordes {
-    margin: 0 auto; }
-  .logo {
-    margin-left: 100%; }
-  .foottxt {
-    text-align: center; }
-  .instagram {
-    font-size: 2em; }
-  .order-xs-first {
-    order: -1; }
-  .tittle {
-    font-size: 5em; }
-  .tittle2 {
-    font-size: 3em; }
-  .subti {
-    font-size: 2em; }
-  .links {
-    font-size: 1em; }
-  .parr {
-    font-size: 1em; } }
-
-@media screen and (max-width: 468px) {
-  .imggaleria:hover {
-    filter: brightness(100%) sepia(30%) contrast(1.8) drop-shadow(0 0 10px #9b9a9a);
-    transform: none;
-    opacity: 1;
-    z-index: 10;
-    overflow: hidden;
-    cursor: zoom-in;
-    align-self: center; } }

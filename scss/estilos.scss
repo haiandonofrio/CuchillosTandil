@@ -8,53 +8,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Lobster&family=Roboto+Slab:wght@300;700&family=Rock+Salt&display=swap');
 
+@import "variables";
+
+@import "reset";
+
+@import "header";
+
+@import "mediaquery";
+
 @font-face {
     font-family: Gothic;
     src: url(../assets/fonts/Gothical.ttf);
 }
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/*El header es desplazable*/
-.header{
-    background: #1c1a1a;
-    background: linear-gradient(90deg,#1c1a1a 0%, #383832 40%, #656965 80%);
-    background: -webkit-linear-gradient(90deg,#1c1a1a 0%, #383832 40%, #656965 80%);
-    background: -moz-linear-gradient(90deg,#1c1a1a 0%, #383832 40%, #656965 80%);
-    z-index: 100;
-    opacity: 90%;
-}
-
-.headercolor{
-    background: #1c1a1a;
-    background: linear-gradient(90deg,#1c1a1a 0%, #383832 40%, #656965 80%);
-    background: -webkit-linear-gradient(90deg,#1c1a1a 0%, #383832 40%, #656965 80%);
-    background: -moz-linear-gradient(90deg,#1c1a1a 0%, #383832 40%, #656965 80%);
-    
-}
-/*El logo mas adelante reemplaza al hipervinculo de inicio*/
-.logo{
-    border-radius: 148px 148px 148px 148px;
-    -webkit-border-radius: 148px 148px 148px 148px;
-    -moz-border-radius: 148px 148px 148px 148px;
-    margin-left: 150%;
-}
-
-.links{
-    font-family: 'Titillium Web', sans-serif;
-    z-index: 10;
-    text-decoration: none;
-    font-size: 2em;
-    font-weight: 120%;
-    border: 1mm solid;
-    border-color: rgb(0, 0, 0);
-    color: rgb(187, 187, 187) !important
-}
-
 
 /*Index*/
 /* Carousel*/
@@ -115,7 +80,7 @@
 }
 
 .subti{
-    font-family: 'Creepster', cursive;
+    font-family: $tipografia-parrafos;
     font-size: 3em;
     margin-left: 3%;
     color: rgb(196, 196, 196)
@@ -125,7 +90,7 @@
 /*Parrafos*/
 .parr{
     /*font-family: 'Titillium Web', sans-serif;*/
-    font-family: 'Creepster', cursive;
+    font-family: $tipografia-parrafos;
     font-size: 1.5em;
     text-align: left;
     color: rgb(196, 196, 196);
@@ -139,7 +104,7 @@
 }
 
 .parrlink{
-    font-family: 'Creepster', cursive;
+    font-family: $tipografia-parrafos;
     color: rgb(196, 196, 196);
 }
 /*Parrafos*/
@@ -262,60 +227,3 @@
     filter:contrast(1.2) brightness(120%) drop-shadow(0 0 10px rgb(129, 129, 129)); ;
 }
 
-/*Media Mobile */
-@media screen and (max-width: 767px) {
-	.subti {
-		text-align: center;
-	}
-    .parr {
-        font-size: 1em;
-    }
-    .subtibordes{
-        margin: 0 auto;
-    }
-    .logo{
-        margin-left: 100%;
-    }
-    .foottxt{
-        text-align: center;;
-    }
-    .instagram{
-        font-size: 2em;
-    }
-
-    .order-xs-first{
-        order: -1;
-    }
-    .tittle{
-        font-size: 5em;
-    }
-    .tittle2{
-        font-size: 3em;
-    }
-
-    .subti{
-        font-size: 2em;
-    }
-
-    .links{
-        font-size: 1em;
-    }
-
-    .parr{
-        font-size: 1em;
-    }
-}
-
-@media screen and (max-width: 468px) {
-
-    .imggaleria:hover{
-        filter: brightness(100%) sepia(30%) contrast(1.8) drop-shadow(0 0 10px rgb(155, 154, 154));
-        transform: none;
-        opacity: 1;
-        z-index: 10;
-        overflow:hidden;
-        cursor:zoom-in;
-        align-self: center;
-    }
-    
-}
