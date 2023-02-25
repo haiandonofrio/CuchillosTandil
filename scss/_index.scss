@@ -1,9 +1,10 @@
 
 .bgcolor{
     background: url(../assets/img/bg-black.jpg) repeat;
+    
+    .imglogo{
+        -webkit-filter: invert(1);
+        filter: invert(1);
+    }
 }
 
-.imglogo{
-    -webkit-filter: invert(1);
-    filter: invert(1);
-}

@@ -111,32 +111,27 @@
 /*Footer*/
 .bgcolor {
   background: url(../assets/img/bg-black.jpg) repeat; }
-
-.imglogo {
-  -webkit-filter: invert(1);
-  filter: invert(1); }
+  .bgcolor .imglogo {
+    -webkit-filter: invert(1);
+    filter: invert(1); }
 
 /* Carousel*/
 .carousel {
   margin-bottom: 4rem; }
-
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10; }
-
-.carousel-item {
-  height: 32rem; }
-
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem; }
-
-/*Botones*/
-.bgBoton {
-  background-color: #9c9695 !important; }
+  .carousel .carousel-item {
+    height: 32rem; }
+    .carousel .carousel-item .carousel-caption {
+      bottom: 3rem;
+      z-index: 10; }
+      .carousel .carousel-item .carousel-caption .carousel-item > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        height: 32rem;
+        /*Botones*/ }
+        .carousel .carousel-item .carousel-caption .carousel-item > img .bgBoton {
+          background-color: #9c9695 !important; }
 
 /*Titulos*/
 /*index*/
@@ -144,25 +139,22 @@
   font-family: Gothic;
   font-size: 7em;
   text-align: center;
-  color: #cecaca; }
-
-/*Otras paginas*/
-.tittle2 {
-  font-family: 'Lobster', cursive;
-  font-family: 'Roboto Slab', serif;
-  font-family: 'Rock Salt', cursive;
   color: #cecaca;
-  font-size: 2em;
-  font-weight: bold;
-  text-align: center; }
+  /*Otras paginas*/ }
+  .tittle .tittle2 {
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Rock Salt', cursive;
+    color: #cecaca;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center; }
+    .tittle .tittle2 .subti {
+      font-family: "Creepster", cursive;
+      font-size: 3em;
+      margin-left: 3%;
+      color: #c4c4c4; }
 
-.subti {
-  font-family: "Creepster", cursive;
-  font-size: 3em;
-  margin-left: 3%;
-  color: #c4c4c4; }
-
-/*Titulos*/
 /*Parrafos*/
 .parr {
   /*font-family: 'Titillium Web', sans-serif;*/
@@ -170,16 +162,14 @@
   font-size: 1.5em;
   text-align: left;
   color: #c4c4c4; }
-
-.parrIndex {
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 2em;
-  text-align: left;
-  color: #c4c4c4; }
-
-.parrlink {
-  font-family: "Creepster", cursive;
-  color: #c4c4c4; }
+  .parr .parrIndex {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2em;
+    text-align: left;
+    color: #c4c4c4; }
+    .parr .parrIndex .parrlink {
+      font-family: "Creepster", cursive;
+      color: #c4c4c4; }
 
 /*Parrafos*/
 /*Nosotros*/
@@ -188,24 +178,6 @@
   height: 40%; }
 
 /*Galeria*/
-.imggaleria {
-  height: 550px !important;
-  object-fit: cover;
-  opacity: 0.8;
-  transition: 0.5s ease-in-out; }
-
-.imggaleria:hover {
-  filter: brightness(100%) sepia(30%) contrast(1.8) drop-shadow(0 0 10px #9b9a9a);
-  transform: scale(1.2);
-  opacity: 1;
-  z-index: 10;
-  overflow: hidden;
-  cursor: zoom-in;
-  align-self: center; }
-
-.img2 {
-  margin-left: 5%; }
-
 .GalTitulo {
   height: 85vh;
   margin: 0 auto;
@@ -215,22 +187,34 @@
   -webkit-border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
   border: 5px outset rgba(24, 24, 24, 0.695); }
+  .GalTitulo .imgtittle {
+    width: 0px;
+    /*unidad de media relativa*/
+    height: 100%;
+    filter: brightness(80%) contrast(120%);
+    flex-grow: 1;
+    border: 2px outset rgba(24, 24, 24, 0.386);
+    object-fit: cover;
+    opacity: 1;
+    transition: 0.5s ease-in-out; }
+    .GalTitulo .imgtittle .imgtittle:hover {
+      width: 10%;
+      opacity: 1.2;
+      filter: contrast(1.2) brightness(120%) drop-shadow(0 0 10px #818181); }
 
-.imgtittle {
-  width: 0px;
-  /*unidad de media relativa*/
-  height: 100%;
-  filter: brightness(80%) contrast(120%);
-  flex-grow: 1;
-  border: 2px outset rgba(24, 24, 24, 0.386);
+.imggaleria {
+  height: 550px !important;
   object-fit: cover;
-  opacity: 1;
+  opacity: 0.8;
   transition: 0.5s ease-in-out; }
-
-.imgtittle:hover {
-  width: 10%;
-  opacity: 1.2;
-  filter: contrast(1.2) brightness(120%) drop-shadow(0 0 10px #818181); }
+  .imggaleria .imggaleria:hover {
+    filter: brightness(100%) sepia(30%) contrast(1.8) drop-shadow(0 0 10px #9b9a9a);
+    transform: scale(1.2);
+    opacity: 1;
+    z-index: 10;
+    overflow: hidden;
+    cursor: zoom-in;
+    align-self: center; }
 
 .FormBoton {
   background-color: #2d2d2da5 !important;
@@ -245,6 +229,5 @@
   object-fit: cover;
   height: 50vh;
   width: 100%; }
-
-.map {
-  color: white; }
+  .mapa .map {
+    color: white; }
