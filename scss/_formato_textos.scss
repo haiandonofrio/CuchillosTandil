@@ -1,0 +1,48 @@
+/*Titulos*/
+/*index*/
+.tittle{
+    font-family: Gothic;
+    font-size: 7em;
+    text-align: center;
+    color: rgb(206, 202, 202)
+}
+/*Otras paginas*/
+.tittle2{
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Rock Salt', cursive;  
+    color: rgb(206, 202, 202);
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.subti{
+    font-family: $tipografia-parrafos;
+    font-size: 3em;
+    margin-left: 3%;
+    color: rgb(196, 196, 196)
+}
+/*Titulos*/
+
+/*Parrafos*/
+.parr{
+    /*font-family: 'Titillium Web', sans-serif;*/
+    font-family: $tipografia-parrafos;
+    font-size: 1.5em;
+    text-align: left;
+    color: rgb(196, 196, 196);
+}
+
+.parrIndex{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2em;
+    text-align: left;
+    color: rgb(196, 196, 196);
+}
+
+.parrlink{
+    font-family: $tipografia-parrafos;
+    color: rgb(196, 196, 196);
+}
+/*Parrafos*/

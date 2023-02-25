@@ -3,6 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@300;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@300;700&family=Rock+Salt&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Creepster&family=Lobster&family=Roboto+Slab:wght@300;700&family=Rock+Salt&display=swap");
+@font-face {
+  font-family: Gothic;
+  src: url(../assets/fonts/Gothical.ttf); }
+
 /*crear variables*/
 /*inicializacion*/
 * {
@@ -75,11 +79,43 @@
     cursor: zoom-in;
     align-self: center; } }
 
-@font-face {
-  font-family: Gothic;
-  src: url(../assets/fonts/Gothical.ttf); }
+/*Footer*/
+.piePag {
+  text-decoration: none;
+  background: #1c1a1a;
+  background: linear-gradient(90deg, #1c1a1a 0%, #383832 40%, #656965 80%);
+  background: -webkit-linear-gradient(90deg, #1c1a1a 0%, #383832 40%, #656965 80%);
+  background: -moz-linear-gradient(90deg, #1c1a1a 0%, #383832 40%, #656965 80%);
+  color: white;
+  text-align: center;
+  border-top: 1mm solid;
+  border-bottom: 1mm solid;
+  border-color: black; }
+  .piePag .foottxt {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    /*Icono red social*/ }
+    .piePag .foottxt .instagram {
+      color: #e6dfe2;
+      font-size: 2em;
+      /*text-decoration: none;*/
+      padding: 2% 0; }
+    .piePag .foottxt .linkedin {
+      color: #e6dfe2;
+      font-size: 1.5em;
+      /*text-decoration: none;*/
+      padding-left: 2%; }
 
-/*Index*/
+/*Footer*/
+.bgcolor {
+  background: url(../assets/img/bg-black.jpg) repeat; }
+
+.imglogo {
+  -webkit-filter: invert(1);
+  filter: invert(1); }
+
 /* Carousel*/
 .carousel {
   margin-bottom: 4rem; }
@@ -102,16 +138,6 @@
 .bgBoton {
   background-color: #9c9695 !important; }
 
-.FormBoton {
-  background-color: #2d2d2da5 !important;
-  font-family: 'Titillium Web', sans-serif;
-  text-decoration: none;
-  font-size: 1.5em;
-  font-weight: 120%;
-  color: #c4c3c3; }
-
-/*Index*/
-/* Carousel*/
 /*Titulos*/
 /*index*/
 .tittle {
@@ -156,62 +182,10 @@
   color: #c4c4c4; }
 
 /*Parrafos*/
-.centrarTexto {
-  text-align: center; }
-
-/*Contacto*/
-.mapa {
-  object-fit: cover;
-  height: 50vh;
-  width: 100%; }
-
 /*Nosotros*/
 .tatuador1 {
   width: 50%;
   height: 40%; }
-
-/*Footer*/
-.piePag {
-  text-decoration: none;
-  background: #1c1a1a;
-  background: linear-gradient(90deg, #1c1a1a 0%, #383832 40%, #656965 80%);
-  background: -webkit-linear-gradient(90deg, #1c1a1a 0%, #383832 40%, #656965 80%);
-  background: -moz-linear-gradient(90deg, #1c1a1a 0%, #383832 40%, #656965 80%);
-  color: white;
-  text-align: center;
-  border-top: 1mm solid;
-  border-bottom: 1mm solid;
-  border-color: black; }
-
-/*Icono red social*/
-.instagram {
-  color: #e6dfe2;
-  font-size: 2em;
-  /*text-decoration: none;*/
-  padding: 2% 0; }
-
-.linkedin {
-  color: #e6dfe2;
-  font-size: 1.5em;
-  /*text-decoration: none;*/
-  padding-left: 2%; }
-
-.foottxt {
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 1em;
-  text-align: center;
-  text-decoration: none; }
-
-/*Footer*/
-.bgcolor {
-  background: url(../assets/img/bg-black.jpg) repeat; }
-
-.imglogo {
-  -webkit-filter: invert(1);
-  filter: invert(1); }
-
-.map {
-  color: white; }
 
 /*Galeria*/
 .imggaleria {
@@ -257,3 +231,20 @@
   width: 10%;
   opacity: 1.2;
   filter: contrast(1.2) brightness(120%) drop-shadow(0 0 10px #818181); }
+
+.FormBoton {
+  background-color: #2d2d2da5 !important;
+  font-family: 'Titillium Web', sans-serif;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 120%;
+  color: #c4c3c3; }
+
+/*Contacto*/
+.mapa {
+  object-fit: cover;
+  height: 50vh;
+  width: 100%; }
+
+.map {
+  color: white; }
