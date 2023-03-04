@@ -1,10 +1,9 @@
 .FormBoton{
-    background-color: #2d2d2da5 !important;
-    font-family: 'Titillium Web', sans-serif;
+    background-color: map-get($map-color , boton) !important;
     text-decoration: none;
-    font-size: 1.5em;
     font-weight: 120%;
-    color: #c4c3c3;
+
+        @include formato-textos(map-get($map-parrafos,font_hf),map-get($map-parrafos,size),map-get($map-parrafos,align),map-get($map-parrafos,color));
 }
 
 /*Contacto*/

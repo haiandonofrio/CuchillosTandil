@@ -1,5 +1,51 @@
 /*crear variables*/
-$color-primario: red;
-$color-secundario: black;
+$map-color: (
+primario: red,
+secundario: black,
+redes: #e6dfe2,
+bgcolor: url(../assets/img/bg-black.jpg) repeat,
+boton: #2d2d2da5,
+);
 
-$tipografia-parrafos: 'Creepster', cursive;
+$dummy: X;
+$font-parrafos: 'Creepster', cursive;
+$font-titulos: Gothic;
+$font-titulo2: 'Lobster', cursive;
+$font-header_footer: 'Titillium Web', sans-serif;
+
+$map-titulo: (
+    font : $font-titulos,
+    size : 7em,
+    align : center,
+    color:  rgb(206, 202, 202)
+);
+
+$map-titulo2: (
+    font : $font-titulo2,
+    size : 2em,
+    color:  rgb(206, 202, 202)
+);
+
+$map-subti: (
+    font : $font-parrafos,
+    size : 3em,
+    align : left,
+    color:  rgb(196, 196, 196)
+);
+
+$map-parrafos: (
+    font : $font-parrafos,
+    font_hf : $font-header_footer,
+    size : 1.5em,
+    size_index : 2em,
+    size_footer: 1em,
+    align : left,
+    align_foot : center,
+    color:  rgb(196, 196, 196)
+);
+
+$map-redes: (
+    color : map-get($map-color , redes ),
+    size : 1.5em,
+    size-instagram : 2em
+);

@@ -9,20 +9,22 @@
         bottom: 3rem;
         z-index: 10;
 
-        .carousel-item > img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            min-width: 100%;
-            height: 32rem;
-
             /*Botones*/
-            .bgBoton{
-                background-color: #9c9695 !important;
-                }
             }
         }
+        .bgBoton{
+            background-color: #5d5b5b !important;
+            }
     }
+    .carousel-item > img {
+        position: absolute;
+        object-fit: cover;
+        background-color: black;
+        top: 0;
+        left: 0;
+        filter: contrast(150%),brightness(120%);
+        min-width: 100%;
+        height: 32rem;
 }
 
 

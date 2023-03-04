@@ -1,46 +1,51 @@
 /*Titulos*/
 /*index*/
 .tittle{
-    font-family: Gothic;
-    font-size: 7em;
-    text-align: center;
-    color: rgb(206, 202, 202);
-    /*Otras paginas*/
-.tittle2{
-    font-family: 'Lobster', cursive;
-    font-family: 'Roboto Slab', serif;
-    font-family: 'Rock Salt', cursive;  
-    color: rgb(206, 202, 202);
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-    .subti{
-        font-family: $tipografia-parrafos;
-        font-size: 3em;
-        margin-left: 3%;
-        color: rgb(196, 196, 196)
-        }
-    }
+    @include formato-textos(map-get($map-titulo,font),map-get($map-titulo,size),map-get($map-titulo,align),map-get($map-titulo,color));
 }
+
+.tittle2{
+    @include formato-textos(map-get($map-titulo2,font),map-get($map-titulo2,size),map-get($map-titulo2,align),map-get($map-titulo2,color));
+    font-weight: bold;
+    }
+
+.subti{
+    @include formato-textos(map-get($map-subti,font),map-get($map-subti,size),map-get($map-subti,align),map-get($map-subti,color));
+
+    margin-left: 3%;
+    }
 
 /*Parrafos*/
 .parr{
-    /*font-family: 'Titillium Web', sans-serif;*/
-    font-family: $tipografia-parrafos;
-    font-size: 1.5em;
-    text-align: left;
-    color: rgb(196, 196, 196);
+    @include formato-textos(map-get($map-parrafos,font),map-get($map-parrafos,size),map-get($map-parrafos,align),map-get($map-parrafos,color));
 
     .parrIndex{
-        font-family: 'Titillium Web', sans-serif;
-        font-size: 2em;
-        text-align: left;
-        color: rgb(196, 196, 196);
-
-        .parrlink{
-            font-family: $tipografia-parrafos;
-            color: rgb(196, 196, 196);
-        }
+        @include formato-textos(map-get($map-parrafos,font_hf),map-get($map-parrafos,size_index),map-get($map-parrafos,align),map-get($map-parrafos,color));
     }
+    .parrlink{
+        text-decoration: underline;
+        font-family: $font-parrafos;
+        color: map-get($map-parrafos,color)!important;
+    }
+}
+
+.parrNos{
+    @include formato-textos(map-get($map-parrafos,font_hf),map-get($map-parrafos,size),map-get($map-parrafos,align_foot),map-get($map-parrafos,color));  
+    padding-top: 15px;
+}
+/*header text*/
+.links{
+    text-decoration: none;
+    font-weight: 120%;
+    border: 1mm solid;
+    border-color: rgb(0, 0, 0);
+
+    @include formato-textos(map-get($map-parrafos,font_hf),map-get($map-parrafos,size_index),map-get($map-parrafos,align_foot),map-get($map-parrafos,color)!important);
+}
+
+.fuenteCarrusel
+.foottxt{
+    @include formato-textos(map-get($map-parrafos,font_hf),map-get($map-parrafos,size_footer),map-get($map-parrafos,align_foot),map-get($map-parrafos,color));
+    text-decoration: none;
 }
 /*Parrafos*/

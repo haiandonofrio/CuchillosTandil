@@ -1,0 +1,43 @@
+@mixin flex-dinamico($direction,$justify,$tipo,$align){
+    display:flex;
+    flex-direction:$direction;
+    justify-content:$justify;
+
+    @if $tipo == item{
+        align-items: $align;
+    }@else if $tipo == self{
+        align-self: $align;
+    }@else{}
+}
+
+.flex-dinamic{
+@include flex-dinamico(column,center,item,center);
+}
+
+.flex-dummy{
+    @include flex-dinamico(column,center,$dummy,$dummy);
+    }
+
+@mixin redes($nombre){
+    /*puedo poner un if dentro de una clase tambien */
+    @if $nombre == instagram{
+        color: map-get($map-redes, color );
+        font-size: map-get($map-redes, size-instagram );
+        padding: 2% 0;
+    }@else if $nombre == linkedin{
+        color: map-get($map-redes, color );
+        font-size: map-get($map-redes, size );
+        padding-left: 2%;
+    }@else if $nombre == map{
+        color: map-get($map-redes, color );
+        font-size: map-get($map-redes, size );
+        padding-left: 2%;}
+
+}
+
+@mixin formato-textos($family,$size,$align,$color){
+    font-family: $family;
+    font-size: $size;
+    text-align: $align;
+    color: $color;
+}

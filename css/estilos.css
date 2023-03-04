@@ -8,12 +8,87 @@
   src: url(../assets/fonts/Gothical.ttf); }
 
 /*crear variables*/
+.flex-dinamic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.flex-dummy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
 /*inicializacion*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
+/*Titulos*/
+/*index*/
+.tittle {
+  font-family: Gothic;
+  font-size: 7em;
+  text-align: center;
+  color: #cecaca; }
+
+.tittle2 {
+  font-family: "Lobster", cursive;
+  font-size: 2em;
+  color: #cecaca;
+  font-weight: bold; }
+
+.subti {
+  font-family: "Creepster", cursive;
+  font-size: 3em;
+  text-align: left;
+  color: #c4c4c4;
+  margin-left: 3%; }
+
+/*Parrafos*/
+.parr {
+  font-family: "Creepster", cursive;
+  font-size: 1.5em;
+  text-align: left;
+  color: #c4c4c4; }
+  .parr .parrIndex {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 2em;
+    text-align: left;
+    color: #c4c4c4; }
+  .parr .parrlink {
+    text-decoration: underline;
+    font-family: "Creepster", cursive;
+    color: #c4c4c4 !important; }
+
+.parrNos {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  color: #c4c4c4;
+  padding-top: 15px; }
+
+/*header text*/
+.links {
+  text-decoration: none;
+  font-weight: 120%;
+  border: 1mm solid;
+  border-color: black;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 2em;
+  text-align: center;
+  color: #c4c4c4 !important; }
+
+.fuenteCarrusel
+.foottxt {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1em;
+  text-align: center;
+  color: #c4c4c4;
+  text-decoration: none; }
+
+/*Parrafos*/
 /*El header es desplazable*/
 .header {
   background: #1c1a1a;
@@ -21,26 +96,143 @@
   background: -webkit-linear-gradient(90deg, #1c1a1a 0%, #383832 40%, #656965 80%);
   background: -moz-linear-gradient(90deg, #1c1a1a 0%, #383832 40%, #656965 80%);
   z-index: 100;
-  opacity: 90%; }
+  opacity: 90%;
+  height: 12vh; }
   .header .headercolor {
     background: #1c1a1a;
     background: linear-gradient(90deg, #1c1a1a 0%, #383832 40%, #656965 80%);
     background: -webkit-linear-gradient(90deg, #1c1a1a 0%, #383832 40%, #656965 80%);
-    background: -moz-linear-gradient(90deg, #1c1a1a 0%, #383832 40%, #656965 80%); }
-    .header .headercolor .logo {
-      border-radius: 148px 148px 148px 148px;
-      -webkit-border-radius: 148px 148px 148px 148px;
-      -moz-border-radius: 148px 148px 148px 148px;
-      margin-left: 150%; }
-    .header .headercolor .links {
-      font-family: 'Titillium Web', sans-serif;
+    background: -moz-linear-gradient(90deg, #1c1a1a 0%, #383832 40%, #656965 80%);
+    height: 12vh; }
+    .header .headercolor .logopos {
+      padding-left: 15%; }
+      .header .headercolor .logopos .logo {
+        border-radius: 148px 148px 148px 148px;
+        -webkit-border-radius: 148px 148px 148px 148px;
+        -moz-border-radius: 148px 148px 148px 148px;
+        height: 10vh; }
+
+/*Footer*/
+.piePag {
+  text-decoration: none;
+  background: #1c1a1a;
+  background: linear-gradient(90deg, #1c1a1a 0%, #383832 40%, #656965 80%);
+  background: -webkit-linear-gradient(90deg, #1c1a1a 0%, #383832 40%, #656965 80%);
+  background: -moz-linear-gradient(90deg, #1c1a1a 0%, #383832 40%, #656965 80%);
+  color: white;
+  text-align: center;
+  border-top: 1mm solid;
+  border-bottom: 1mm solid;
+  border-color: black; }
+
+.instagram {
+  /*puedo poner un if dentro de una clase tambien */
+  color: #e6dfe2;
+  font-size: 2em;
+  padding: 2% 0; }
+
+.linkedin {
+  /*puedo poner un if dentro de una clase tambien */
+  color: #e6dfe2;
+  font-size: 1.5em;
+  padding-left: 2%; }
+
+.mapicon {
+  /*puedo poner un if dentro de una clase tambien */
+  color: #e6dfe2;
+  font-size: 1.5em;
+  padding-left: 2%; }
+
+/*Footer*/
+.bgcolor {
+  background: url(../assets/img/bg-black.jpg) repeat; }
+  .bgcolor .imglogo {
+    -webkit-filter: invert(1);
+    filter: invert(1); }
+
+/* Carousel*/
+.carousel {
+  margin-bottom: 4rem; }
+  .carousel .carousel-item {
+    height: 32rem; }
+    .carousel .carousel-item .carousel-caption {
+      bottom: 3rem;
       z-index: 10;
-      text-decoration: none;
-      font-size: 2em;
-      font-weight: 120%;
-      border: 1mm solid;
-      border-color: black;
-      color: #bbbbbb !important; }
+      /*Botones*/ }
+  .carousel .bgBoton {
+    background-color: #5d5b5b !important; }
+
+.carousel-item > img {
+  position: absolute;
+  object-fit: cover;
+  background-color: black;
+  top: 0;
+  left: 0;
+  filter: contrast(150%), brightness(120%);
+  min-width: 100%;
+  height: 32rem; }
+
+/*Nosotros*/
+.tatuador {
+  border-radius: 148px 148px 148px 148px;
+  -webkit-border-radius: 148px 148px 148px 148px;
+  -moz-border-radius: 148px 148px 148px 148px; }
+
+/*Galeria*/
+.GalTitulo {
+  height: 85vh;
+  margin: 0 auto;
+  border-radius: 18px 18px 18px 18px;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  border: 5px outset rgba(24, 24, 24, 0.695); }
+  .GalTitulo .imgtittle {
+    width: 0px;
+    /*unidad de media relativa*/
+    height: 100%;
+    filter: brightness(80%) contrast(120%);
+    flex-grow: 1;
+    border: 2px outset rgba(24, 24, 24, 0.386);
+    object-fit: cover;
+    opacity: 1;
+    transition: 0.5s ease-in-out; }
+  .GalTitulo .imgtittle:hover {
+    width: 10%;
+    opacity: 1.2;
+    filter: contrast(1.2) brightness(120%) drop-shadow(0 0 10px #818181); }
+
+.imggaleria {
+  height: 550px !important;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease-in-out; }
+
+.imggaleria:hover {
+  filter: brightness(100%) sepia(30%) contrast(1.8) drop-shadow(0 0 10px #9b9a9a);
+  transform: scale(1.2);
+  opacity: 1;
+  z-index: 10;
+  overflow: hidden;
+  cursor: zoom-in;
+  align-self: center; }
+
+.FormBoton {
+  background-color: #2d2d2da5 !important;
+  text-decoration: none;
+  font-weight: 120%;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.5em;
+  text-align: left;
+  color: #c4c4c4; }
+
+/*Contacto*/
+.mapa {
+  object-fit: cover;
+  height: 50vh;
+  width: 100%; }
+  .mapa .map {
+    color: white; }
 
 /*Media Mobile */
 @media screen and (max-width: 767px) {
@@ -77,157 +269,13 @@
     z-index: 10;
     overflow: hidden;
     cursor: zoom-in;
-    align-self: center; } }
-
-/*Footer*/
-.piePag {
-  text-decoration: none;
-  background: #1c1a1a;
-  background: linear-gradient(90deg, #1c1a1a 0%, #383832 40%, #656965 80%);
-  background: -webkit-linear-gradient(90deg, #1c1a1a 0%, #383832 40%, #656965 80%);
-  background: -moz-linear-gradient(90deg, #1c1a1a 0%, #383832 40%, #656965 80%);
-  color: white;
-  text-align: center;
-  border-top: 1mm solid;
-  border-bottom: 1mm solid;
-  border-color: black; }
-  .piePag .foottxt {
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 1em;
-    text-align: center;
-    text-decoration: none;
-    /*Icono red social*/ }
-    .piePag .foottxt .instagram {
-      color: #e6dfe2;
-      font-size: 2em;
-      /*text-decoration: none;*/
-      padding: 2% 0; }
-    .piePag .foottxt .linkedin {
-      color: #e6dfe2;
-      font-size: 1.5em;
-      /*text-decoration: none;*/
-      padding-left: 2%; }
-
-/*Footer*/
-.bgcolor {
-  background: url(../assets/img/bg-black.jpg) repeat; }
-  .bgcolor .imglogo {
-    -webkit-filter: invert(1);
-    filter: invert(1); }
-
-/* Carousel*/
-.carousel {
-  margin-bottom: 4rem; }
-  .carousel .carousel-item {
-    height: 32rem; }
-    .carousel .carousel-item .carousel-caption {
-      bottom: 3rem;
-      z-index: 10; }
-      .carousel .carousel-item .carousel-caption .carousel-item > img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        min-width: 100%;
-        height: 32rem;
-        /*Botones*/ }
-        .carousel .carousel-item .carousel-caption .carousel-item > img .bgBoton {
-          background-color: #9c9695 !important; }
-
-/*Titulos*/
-/*index*/
-.tittle {
-  font-family: Gothic;
-  font-size: 7em;
-  text-align: center;
-  color: #cecaca;
-  /*Otras paginas*/ }
-  .tittle .tittle2 {
-    font-family: 'Lobster', cursive;
-    font-family: 'Roboto Slab', serif;
-    font-family: 'Rock Salt', cursive;
-    color: #cecaca;
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center; }
-    .tittle .tittle2 .subti {
-      font-family: "Creepster", cursive;
-      font-size: 3em;
-      margin-left: 3%;
-      color: #c4c4c4; }
-
-/*Parrafos*/
-.parr {
-  /*font-family: 'Titillium Web', sans-serif;*/
-  font-family: "Creepster", cursive;
-  font-size: 1.5em;
-  text-align: left;
-  color: #c4c4c4; }
-  .parr .parrIndex {
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 2em;
-    text-align: left;
-    color: #c4c4c4; }
-    .parr .parrIndex .parrlink {
-      font-family: "Creepster", cursive;
-      color: #c4c4c4; }
-
-/*Parrafos*/
-/*Nosotros*/
-.tatuador1 {
-  width: 50%;
-  height: 40%; }
-
-/*Galeria*/
-.GalTitulo {
-  height: 85vh;
-  margin: 0 auto;
-  /*background: #0000001b; */
-  border-radius: 18px 18px 18px 18px;
-  border-radius: 10px 10px 10px 10px;
-  -webkit-border-radius: 10px 10px 10px 10px;
-  -moz-border-radius: 10px 10px 10px 10px;
-  border: 5px outset rgba(24, 24, 24, 0.695); }
-  .GalTitulo .imgtittle {
-    width: 0px;
-    /*unidad de media relativa*/
-    height: 100%;
-    filter: brightness(80%) contrast(120%);
-    flex-grow: 1;
-    border: 2px outset rgba(24, 24, 24, 0.386);
-    object-fit: cover;
-    opacity: 1;
-    transition: 0.5s ease-in-out; }
-    .GalTitulo .imgtittle .imgtittle:hover {
-      width: 10%;
-      opacity: 1.2;
-      filter: contrast(1.2) brightness(120%) drop-shadow(0 0 10px #818181); }
-
-.imggaleria {
-  height: 550px !important;
-  object-fit: cover;
-  opacity: 0.8;
-  transition: 0.5s ease-in-out; }
-  .imggaleria .imggaleria:hover {
-    filter: brightness(100%) sepia(30%) contrast(1.8) drop-shadow(0 0 10px #9b9a9a);
-    transform: scale(1.2);
-    opacity: 1;
-    z-index: 10;
-    overflow: hidden;
-    cursor: zoom-in;
     align-self: center; }
-
-.FormBoton {
-  background-color: #2d2d2da5 !important;
-  font-family: 'Titillium Web', sans-serif;
-  text-decoration: none;
-  font-size: 1.5em;
-  font-weight: 120%;
-  color: #c4c3c3; }
-
-/*Contacto*/
-.mapa {
-  object-fit: cover;
-  height: 50vh;
-  width: 100%; }
-  .mapa .map {
-    color: white; }
+  .header {
+    height: auto; }
+    .header .headercolor {
+      height: auto; }
+      .header .headercolor .logo {
+        margin: 0 80%;
+        height: 10vh; }
+  .links {
+    height: auto; } }

@@ -1,7 +1,7 @@
 
 .bgcolor{
-    background: url(../assets/img/bg-black.jpg) repeat;
-    
+    background: map-get($map-color , bgcolor );
+
     .imglogo{
         -webkit-filter: invert(1);
         filter: invert(1);

@@ -11,31 +11,18 @@
     border-bottom: 1mm solid;
     border-color: black;
 
-.foottxt{
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 1em;
-    text-align: center;
-    text-decoration: none;
-        /*Icono red social*/
+}
 
 .instagram{
-    color: #e6dfe2;
-    font-size: 2em;
-    /*text-decoration: none;*/
-    padding: 2% 0;
+    @include redes(instagram);
     }
 
 .linkedin{
-    color: #e6dfe2;
-    font-size: 1.5em;
-    /*text-decoration: none;*/
-    padding-left: 2%;
-        }
+    @include redes(linkedin);
     }
-}
 
-
-
-
+.mapicon{
+    @include redes(map);
+    }
 
 /*Footer*/

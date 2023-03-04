@@ -11,13 +11,14 @@
         <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css">
         <link rel="stylesheet" href="../css/bootstrap.min.css" >
         <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
         <header class="container-fluid header sticky-top">
             <div class="row headercolor">
             <div class="col-lg-12 col-xs-12">
                 <nav class="navbar navbar-expand-lg navbar-light headercolor">
-                <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.png" alt="logomain" class="img-fluid logo"></a>
+                <a class="navbar-brand logopos" href="../index.html"><img src="../assets/img/logo.png" alt="logomain" class="img-fluid logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -38,19 +39,20 @@
             <section class="container">
             <section>
                 <div>
-                    <h1 class="tittle">Sobre Nosotros</h1>
+                    <h1 class="tittle pb-4">Sobre Nosotros</h1>
                 </div>
                 <div>
-                    <h2 class="subti text-center">Conocé a nuestros expertos tatuadores</h2>
+                    <h2 class="subti text-center pb-4">Conocé a nuestros expertos tatuadores</h2>
+                    <h3 class="parrNos">Somos un estudio pequeño, dedicado a realizar trabajos personalizados de alta calidad. Nos enfocamos en que el cliente obtenga un resultado que supere sus espectativas y realizamos cada diseño en base a las ideas que tengas.</h3>
                 </div>
             </section>
             <section class="py-lg-5 py-3">
-                <h2 class="subti py-lg-5 text-center">Lautaro Cano</h2>
-                <div class="row">
+                <h2 data-aos="fade-up" data-aos-offset="300" class="subti py-lg-5 text-center">Lautaro Cano</h2>
+                <div data-aos="fade-up-right" class="row">
                     <div class="col-xs-12 col-lg-6">
-                        <img src="../assets/img/tatuador hombre" alt="Lautaro" class="img-fluid">
+                        <img src="../assets/img/tatuador hombre" alt="Lautaro" class="img-fluid tatuador">
                     </div>
-                    <div class="col-xs-12 col-lg-6 parr p-4 d-flex flex-column justify-content-center">
+                    <div data-aos="fade-up-left" class="col-xs-12 col-lg-6 parr p-4 d-flex flex-column justify-content-center">
                         <p>Aficionado por el arte y las ilustraciones, Lautaro es un joven entusiaste
                         que de temprana edad empezó con su propio estudio.
                         </p>
@@ -59,15 +61,15 @@
                         </p>
                     </div>
                 </div>
-                <h2 class="subti text-center py-lg-5">Caro Camarata</h2>
+                <h2 data-aos="fade-left" class="subti text-center py-lg-5">Caro Camarata</h2>
                 <div class="row">
-                    <div class="col-xs-12 col-lg-6 parr p-4 d-flex flex-column justify-content-center">
+                    <div data-aos="fade-right" class="col-xs-12 col-lg-6 parr p-4 flex-dummy">
                         <p>A diferencia de su compañero Lautaro, Caro se dedica a realizar diseños vanguardista
                             , haciendo uso de multiples técnicas que le permite su infinita capacidad.
                         </p>
                     </div>
-                    <div class="col-xs-12 col-lg-6 order-xs-first">
-                    <img src="../assets/img/tatuadora mujer.jpg" alt="Carolina" class="img-fluid" >
+                    <div data-aos="fade-down-left"class="col-xs-12 col-lg-6 order-xs-first">
+                    <img src="../assets/img/tatuadora mujer.jpg" alt="Carolina" class="img-fluid tatuador" >
                     </div>
                 </div>
             </section>
@@ -82,7 +84,7 @@
                     <a href="https://www.instagram.com/" target="_blank">
                         <i class="fa-brands fa-instagram instagram"></i>
                     </a>
-                    <p class="foottxt pt-1">Paraguay 3605, Palermo, CABA <a  class="map" href="./contacto.html#mapa"><i class="fa-solid fa-location-dot"></i></a></p>
+                    <p class="foottxt pt-1">Paraguay 3605, Palermo, CABA <a href="./contacto.html#mapa"><i class="fa-solid fa-location-dot mapicon"></i></a></p>
                     </div>
                 <div class="col-sm">
                     
@@ -94,5 +96,10 @@
             </div>
         </footer>
         <script src="../js/bootstrap.bundle.min.js"></script> 
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+         <script>
+         AOS.init();
+         </script>
+
     </body>
 </html>
