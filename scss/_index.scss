@@ -4,7 +4,16 @@
 
     .imglogo{
         -webkit-filter: invert(1);
-        filter: invert(1);
+        filter: invert(1) brightness(130%);
+    }
+
+    .bgcolor-textos{
+        background-color: rgb(255, 255, 255);
     }
 }
 
+.bg-tatuador{
+    background: map-get($map-color , bgtatuador );
+    z-index: -10;
+
+}

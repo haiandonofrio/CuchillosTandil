@@ -2,22 +2,24 @@
 /*index*/
 .tittle{
     @include formato-textos(map-get($map-titulo,font),map-get($map-titulo,size),map-get($map-titulo,align),map-get($map-titulo,color));
+    filter: brightness(150%)
 }
 
 .tittle2{
     @include formato-textos(map-get($map-titulo2,font),map-get($map-titulo2,size),map-get($map-titulo2,align),map-get($map-titulo2,color));
     font-weight: bold;
+    filter: brightness(150%)
     }
 
 .subti{
     @include formato-textos(map-get($map-subti,font),map-get($map-subti,size),map-get($map-subti,align),map-get($map-subti,color));
-
+    filter: brightness(150%);
     margin-left: 3%;
     }
 
 /*Parrafos*/
-.parr{
-    @include formato-textos(map-get($map-parrafos,font),map-get($map-parrafos,size),map-get($map-parrafos,align),map-get($map-parrafos,color));
+    .parr{
+        @include formato-textos(map-get($map-parrafos,font),map-get($map-parrafos,size),map-get($map-parrafos,align),map-get($map-parrafos,color));
 
     .parrIndex{
         @include formato-textos(map-get($map-parrafos,font_hf),map-get($map-parrafos,size_index),map-get($map-parrafos,align),map-get($map-parrafos,color));
@@ -29,6 +31,15 @@
     }
 }
 
+.parrMain{
+    @extend .parr;
+    font-family: $font-header_footer;
+}
+
+.parrCuidado{
+    @extend .parrMain;
+    font-size: map-get($map-parrafos , size_footer)
+}
 .parrNos{
     @include formato-textos(map-get($map-parrafos,font_hf),map-get($map-parrafos,size),map-get($map-parrafos,align_foot),map-get($map-parrafos,color));  
     padding-top: 15px;

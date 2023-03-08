@@ -6,6 +6,27 @@
         @include formato-textos(map-get($map-parrafos,font_hf),map-get($map-parrafos,size),map-get($map-parrafos,align),map-get($map-parrafos,color));
 }
 
+.FormBoton:Hover{
+    filter: brightness(120%);
+}
+.field{
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.184);
+    outline:none;
+    background-color: #c8c8c8;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: all 0.3s ease-in-out;
+}
+.field:hover{
+    background-color: rgba(0,0,0,0.1);
+
+}
+.field:focus{
+    border: 2px solid #0e0e0e;
+    background-color: #fff;
+}
 /*Contacto*/
 .mapa{
     object-fit: cover; 

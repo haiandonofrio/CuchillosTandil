@@ -31,36 +31,45 @@
   font-family: Gothic;
   font-size: 7em;
   text-align: center;
-  color: #cecaca; }
+  color: #cecaca;
+  filter: brightness(150%); }
 
 .tittle2 {
   font-family: "Lobster", cursive;
   font-size: 2em;
   color: #cecaca;
-  font-weight: bold; }
+  font-weight: bold;
+  filter: brightness(150%); }
 
 .subti {
   font-family: "Creepster", cursive;
   font-size: 3em;
   text-align: left;
   color: #c4c4c4;
+  filter: brightness(150%);
   margin-left: 3%; }
 
 /*Parrafos*/
-.parr {
+.parr, .parrMain, .parrCuidado {
   font-family: "Creepster", cursive;
   font-size: 1.5em;
   text-align: left;
   color: #c4c4c4; }
-  .parr .parrIndex {
+  .parr .parrIndex, .parrMain .parrIndex, .parrCuidado .parrIndex {
     font-family: "Titillium Web", sans-serif;
     font-size: 2em;
     text-align: left;
     color: #c4c4c4; }
-  .parr .parrlink {
+  .parr .parrlink, .parrMain .parrlink, .parrCuidado .parrlink {
     text-decoration: underline;
     font-family: "Creepster", cursive;
     color: #c4c4c4 !important; }
+
+.parrMain, .parrCuidado {
+  font-family: "Titillium Web", sans-serif; }
+
+.parrCuidado {
+  font-size: 1em; }
 
 .parrNos {
   font-family: "Titillium Web", sans-serif;
@@ -80,8 +89,7 @@
   text-align: center;
   color: #c4c4c4 !important; }
 
-.fuenteCarrusel
-.foottxt {
+.fuenteCarrusel .foottxt {
   font-family: "Titillium Web", sans-serif;
   font-size: 1em;
   text-align: center;
@@ -148,7 +156,13 @@
   background: url(../assets/img/bg-black.jpg) repeat; }
   .bgcolor .imglogo {
     -webkit-filter: invert(1);
-    filter: invert(1); }
+    filter: invert(1) brightness(130%); }
+  .bgcolor .bgcolor-textos {
+    background-color: white; }
+
+.bg-tatuador {
+  background: url(../assets/img/fondotatuador.jpg) repeat;
+  z-index: -10; }
 
 /* Carousel*/
 .carousel {
@@ -226,6 +240,26 @@
   text-align: left;
   color: #c4c4c4; }
 
+.FormBoton:Hover {
+  filter: brightness(120%); }
+
+.field {
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.184);
+  outline: none;
+  background-color: #c8c8c8;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: all 0.3s ease-in-out; }
+
+.field:hover {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+.field:focus {
+  border: 2px solid #0e0e0e;
+  background-color: #fff; }
+
 /*Contacto*/
 .mapa {
   object-fit: cover;
@@ -238,7 +272,7 @@
 @media screen and (max-width: 767px) {
   .subti {
     text-align: center; }
-  .parr {
+  .parr, .parrMain, .parrCuidado {
     font-size: 1em; }
   .subtibordes {
     margin: 0 auto; }
@@ -258,7 +292,7 @@
     font-size: 2em; }
   .links {
     font-size: 1em; }
-  .parr {
+  .parr, .parrMain, .parrCuidado {
     font-size: 1em; } }
 
 @media screen and (max-width: 468px) {
