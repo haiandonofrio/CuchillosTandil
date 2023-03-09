@@ -8,9 +8,16 @@
   src: url(../assets/fonts/Gothical.ttf); }
 
 /*crear variables*/
+/*Variable para pasar valor vacio en mixin*/
 .flex-dinamic {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.flex-dinamic-row {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center; }
 
@@ -32,7 +39,8 @@
   font-size: 7em;
   text-align: center;
   color: #cecaca;
-  filter: brightness(150%); }
+  filter: brightness(150%);
+  text-shadow: -1px -1px 0px #000, 0px -1px 0px #000, 1px -1px 0px #000, -1px 0px 0px #000, 1px 0px 0px #000, -1px 1px 0px #000, 0px 1px 0px #000, 1px 1px 0px #000, -2px -2px 0px #000, -1px -2px 0px #000, 0px -2px 0px #000, 1px -2px 0px #000, 2px -2px 0px #000, 2px -1px 0px #000, 2px 0px 0px #000, 2px 1px 0px #000, 2px 2px 0px #000, 1px 2px 0px #000, 0px 2px 0px #000, -1px 2px 0px #000, -2px 2px 0px #000, -2px 1px 0px #000, -2px 0px 0px #000, -2px -1px 0px #000; }
 
 .tittle2 {
   font-family: "Lobster", cursive;
@@ -47,6 +55,7 @@
   text-align: left;
   color: #c4c4c4;
   filter: brightness(150%);
+  text-shadow: -1px -1px 0px #000, 0px -1px 0px #000, 1px -1px 0px #000, -1px 0px 0px #000, 1px 0px 0px #000, -1px 1px 0px #000, 0px 1px 0px #000, 1px 1px 0px #000, -2px -2px 0px #000, -1px -2px 0px #000, 0px -2px 0px #000, 1px -2px 0px #000, 2px -2px 0px #000, 2px -1px 0px #000, 2px 0px 0px #000, 2px 1px 0px #000, 2px 2px 0px #000, 1px 2px 0px #000, 0px 2px 0px #000, -1px 2px 0px #000, -2px 2px 0px #000, -2px 1px 0px #000, -2px 0px 0px #000, -2px -1px 0px #000;
   margin-left: 3%; }
 
 /*Parrafos*/
@@ -66,7 +75,10 @@
     color: #c4c4c4 !important; }
 
 .parrMain, .parrCuidado {
-  font-family: "Titillium Web", sans-serif; }
+  font-family: "Titillium Web", sans-serif;
+  filter: brightness(180%);
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+  text-shadow: -1px -1px 0px #000, 0px -1px 0px #000, 1px -1px 0px #000, -1px 0px 0px #000, 1px 0px 0px #000, -1px 1px 0px #000, 0px 1px 0px #000, 1px 1px 0px #000, -2px -2px 0px #000, -1px -2px 0px #000, 0px -2px 0px #000, 1px -2px 0px #000, 2px -2px 0px #000, 2px -1px 0px #000, 2px 0px 0px #000, 2px 1px 0px #000, 2px 2px 0px #000, 1px 2px 0px #000, 0px 2px 0px #000, -1px 2px 0px #000, -2px 2px 0px #000, -2px 1px 0px #000, -2px 0px 0px #000, -2px -1px 0px #000; }
 
 .parrCuidado {
   font-size: 1em; }
@@ -76,7 +88,8 @@
   font-size: 1.5em;
   text-align: center;
   color: #c4c4c4;
-  padding-top: 15px; }
+  padding-top: 15px;
+  filter: brightness(160%); }
 
 /*header text*/
 .links {
@@ -133,11 +146,26 @@
   border-bottom: 1mm solid;
   border-color: black; }
 
+.btnup {
+  /*puedo poner un if dentro de una clase tambien */
+  color: #e6dfe2;
+  font-size: 2em;
+  padding: 2% 0; }
+
+.btnup:hover {
+  color: rgba(167, 164, 164, 0.956); }
+
 .instagram {
   /*puedo poner un if dentro de una clase tambien */
   color: #e6dfe2;
   font-size: 2em;
   padding: 2% 0; }
+
+.instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 .linkedin {
   /*puedo poner un if dentro de una clase tambien */
@@ -145,11 +173,17 @@
   font-size: 1.5em;
   padding-left: 2%; }
 
+.linkedin:hover {
+  color: #0e76a8; }
+
 .mapicon {
   /*puedo poner un if dentro de una clase tambien */
   color: #e6dfe2;
   font-size: 1.5em;
   padding-left: 2%; }
+
+.mapicon:hover {
+  color: #d83131; }
 
 /*Footer*/
 .bgcolor {
@@ -163,6 +197,13 @@
 .bg-tatuador {
   background: url(../assets/img/fondotatuador.jpg) repeat;
   z-index: -10; }
+
+.bgimg {
+  background: url(../assets/img/borde2.png) no-repeat; }
+
+.bgbanner {
+  background: url(../assets/img/output-onlinepngtools.png) repeat;
+  padding-bottom: 5%; }
 
 /* Carousel*/
 .carousel {
@@ -191,6 +232,22 @@
   border-radius: 148px 148px 148px 148px;
   -webkit-border-radius: 148px 148px 148px 148px;
   -moz-border-radius: 148px 148px 148px 148px; }
+
+.instagramNos {
+  /*puedo poner un if dentro de una clase tambien */
+  color: #e6dfe2;
+  font-size: 2em;
+  padding: 2% 0;
+  font-size: 3em; }
+
+.instagramNos:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.bgnosotros {
+  background: url(../assets/img/bgnosotros.png) repeat; }
 
 /*Galeria*/
 .GalTitulo {

@@ -17,3 +17,12 @@
     z-index: -10;
 
 }
+
+.bgimg{
+    background: map-get($map-color , bgborde ) no-repeat;
+}
+
+.bgbanner{
+    background: map-get($map-color , bgbanner );
+    padding-bottom: 5%;
+}

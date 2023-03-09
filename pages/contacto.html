@@ -5,7 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BlackMoonTatoo</title>
-        <!--el icono es temporal hasta encontrar uno mejor -->
         <link rel="icon" href="../favicon.ico">
         <script src="https://kit.fontawesome.com/b0eac78012.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css">
@@ -13,73 +12,85 @@
         <link rel="stylesheet" href="../css/estilos.css">
     </head>
     <body>
+        <!--Header-->
         <header class="container-fluid header sticky-top">
             <div class="row headercolor">
-            <div class="col-lg-12 col-xs-12">
-                <nav class="navbar navbar-expand-lg navbar-light headercolor">
-                <a class="navbar-brand logopos" href="../index.html"><img src="../assets/img/logo.png" alt="logomain" class="img-fluid logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse justify-content-end nav nav-tabs" id="navbarNav">
-                    <ul class="navbar-nav">
-                    <li class="nav-item"><a  class="nav-link links" href="./nosotros.html">Nosotros<span class="sr-only">(current)</span></a></li>
-                    <li class="nav-item"><a  class="nav-link links" href="./galeria.html">Galeria</a></li>
-                    <li class="nav-item"><a  class="nav-link links" href="./cuidados.html">Cuidados</a></li>
-                    <li class="nav-item"><a  class="nav-link links" href="./contacto.html">Contacto</a></li>
-                    </ul>
+                <div class="col-lg-12 col-xs-12">
+                    <!--Navegador Responsive con boton-->
+                    <nav class="navbar navbar-expand-lg navbar-light headercolor">
+                    <a class="navbar-brand logopos" href="../index.html"><img src="../assets/img/logo.png" alt="logomain" class="img-fluid logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse justify-content-end nav nav-tabs" id="navbarNav">
+                        <ul class="navbar-nav">
+                        <li class="nav-item"><a  class="nav-link links" href="./nosotros.html">Nosotros<span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a  class="nav-link links" href="./galeria.html">Galeria</a></li>
+                        <li class="nav-item"><a  class="nav-link links" href="./cuidados.html">Cuidados</a></li>
+                        <li class="nav-item"><a  class="nav-link links" href="./contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                    </nav>
                 </div>
-                </nav>
             </div>
-            </div>
+            <!--Header-->
         </header>
         <main class="container-fluid bg-tatuador">
             <div class="container bgcolor">
-            <h1 class="tittle">Contacto</h1>
-            <section class="container flex-dinamic py-5">
-                <h2 class="subti text-center">Por cualquier duda o consulta envianos un mensaje</h2>
-                <form action="">
-                <fieldset>
-                <div class="row py-3">
-                    <label class="col-lg-5 col-xs-12" for="Nombre"><p class="parrMain">Nombre y Apellido*</p></label>
-                    <input class="col-lg-7 col-xs-12 field" type="text" name="" id="">
-                </div>
-                <div class="row py-3">
-                    <label class="col-lg-3 col-xs-12" for="Indique su mail"><p class="parrMain">Email*</p></label>
-                    <input class="col-lg-9 col-xs-12 field" type="email" name="" id="" placeholder="haianjoel@hotmail.com">
-                </div>
-                <div class="row py-3">
-                    <label class="col-lg-3 col-xs-12"for=""><p class="parrMain align-self-start">Mensaje*</p></label>
-                    <textarea class="col-lg-9 col-xs-12 field" name="" id="" cols="50" rows="10" placeholder="Ingrese un Comentario"></textarea>
-                </div>
-                <div class="d-flex justify-content-end py-3">
-                    <input class="FormBoton px-1 mx-2" type="submit" value="Enviar Mensaje">
-                </div>
-            </fieldset>
-                </form>
-                <section>
+            <!--Titulo Contacto-->
+                <section class="bgbanner">
+                    <h1 class="tittle">Contacto</h1>
+                    <h2 class="parrMain text-center">Por cualquier duda o consulta envianos un mensaje</h2>
+                </section>
+                <!--Titulo Contacto-->
+                <section class="container flex-dinamic py-5">
+                    <!--formulario de consultas-->
+                    <form action="">
+                        <fieldset>
+                            <div class="row py-3">
+                                <label class="col-lg-5 col-xs-12" for="Nombre"><p class="parrMain">Nombre y Apellido*</p></label>
+                                <input class="col-lg-7 col-xs-12 field" type="text" name="" id="">
+                            </div>
+                            <div class="row py-3">
+                                <label class="col-lg-3 col-xs-12" for="Indique su mail"><p class="parrMain">Email*</p></label>
+                                <input class="col-lg-9 col-xs-12 field" type="email" name="" id="" placeholder="haianjoel@hotmail.com">
+                            </div>
+                            <div class="row py-3">
+                                <label class="col-lg-3 col-xs-12"for=""><p class="parrMain align-self-start">Mensaje*</p></label>
+                                <textarea class="col-lg-9 col-xs-12 field" name="" id="" cols="50" rows="10" placeholder="Ingrese un Comentario"></textarea>
+                            </div>
+                            <div class="d-flex justify-content-end py-3">
+                                <input class="FormBoton px-1 mx-2" type="submit" value="Enviar Mensaje">
+                            </div>
+                        </fieldset>
+                    </form>
+                    <!--formulario de consultas-->
+                    <!--Ubicacion y mapa-->
+                    <div>
                         <div>
                             <h2 class="subti text-center">Estamos ubicados en la zona de palermo</h2>  
                         </div>
                         <div class="py-2" id="mapa">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.4960186077224!2d-58.41740224926349!3d-34.59161676426892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca80cfd58e81%3A0xd738e93b71b17836!2sParaguay%203605%2C%20C1425BRW%20CABA!5e0!3m2!1ses!2sar!4v1674612156899!5m2!1ses!2sar" class="mapa" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>   
-            </section>
-        </section>
-        </div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.4960186077224!2d-58.41740224926349!3d-34.59161676426892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca80cfd58e81%3A0xd738e93b71b17836!2sParaguay%203605%2C%20C1425BRW%20CABA!5e0!3m2!1ses!2sar!4v1674612156899!5m2!1ses!2sar" class="mapa" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>   
+                    </div>
+                    <!--Ubicacion y mapa-->
+                </section>
+            </div>
         </main>
+        <!--footer-->
         <footer class="piePag container-fluid" >
             <div class="container row align-items-center">
                 <div class="col-sm">
-                    <a href="#"><i class="fa-solid fa-circle-arrow-up instagram"></i></a>
+                    <a href="#"><i class="fa-solid fa-circle-arrow-up btnup"></i></a>
                 </div>
                 <div class="col-sm">
-                    <a href="https://www.instagram.com/" target="_blank">
+                    <a href="https://www.instagram.com/blackmoontattooba/" target="_blank">
                         <i class="fa-brands fa-instagram instagram"></i>
                     </a>
                     <p class="foottxt pt-1">Paraguay 3605, Palermo, CABA <a href="#mapa"><i class="fa-solid fa-location-dot mapicon"></i></a></p>
-                    </div>
+                </div>
                 <div class="col-sm">
                     
                     <p class="foottxt">&copy;Todos los derechos reservados 2023</p>
@@ -89,6 +100,7 @@
                 </div>
             </div>
         </footer>
+        <!--footer-->
         <script src="../js/bootstrap.bundle.min.js"></script> 
     </body>
 </html>

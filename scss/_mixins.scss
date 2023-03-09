@@ -12,8 +12,10 @@
 
 .flex-dinamic{
 @include flex-dinamico(column,center,item,center);
-}
-
+    }
+.flex-dinamic-row{
+    @include flex-dinamico(row,center,item,center);
+    }
 .flex-dummy{
     @include flex-dinamico(column,center,$dummy,$dummy);
     }

@@ -5,7 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BlackMoonTatoo</title>
-        <!--el icono es temporal hasta encontrar uno mejor -->
         <link rel="icon" href="../favicon.ico">
         <script src="https://kit.fontawesome.com/b0eac78012.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css">
@@ -13,9 +12,11 @@
         <link rel="stylesheet" href="../css/estilos.css">
     </head>
     <body>
+        <!--Header-->
         <header class="container-fluid header sticky-top">
             <div class="row headercolor">
             <div class="col-lg-12 col-xs-12">
+                <!--Navegador Responsive con boton-->
                 <nav class="navbar navbar-expand-lg navbar-light headercolor">
                 <a class="navbar-brand logopos" href="../index.html"><img src="../assets/img/logo.png" alt="logomain" class="img-fluid logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -34,26 +35,28 @@
             </div>
             </div>
         </header>
-        <main class="container-fluid bg-tatuador pb-5">
-            <div class="container bgcolor">
-            <div class="container col-lg-12 col-xs-12">
-            <div>
+        <!--Header-->
+        <main class="container-fluid bg-tatuador ">
+            <div class="container bgcolor pb-3">
+            <!--Titulo Galeria-->
+            <section class="bgbanner">
                 <h1 class="tittle">Galeria</h1>
-            </div>
-            <h2 class="subti text-lg-center">Mirá todos nuestros trabajos e inspirate para hacerte el tuyo</h2>
-                <!--vista preliminar de diseños-->
-                <section class="container d-flex justify-content-center align-items-center GalTitulo">
+                <h2 class="parrMain text-center">Mirá todos nuestros trabajos e inspirate para hacerte el tuyo</h2>
+            </section>
+            <!--Titulo Galeria-->
+            <!--vista preliminar de diseños-->
+            <section class="flex-dinamic-row GalTitulo">
                     <img class="imgtittle" src="../assets/img/titulo 1.png" alt="img para titulo de Galeria">
                     <img class="imgtittle" src="../assets/img/titulo 2.png" alt="img para titulo de Galeria">
                     <img class="imgtittle" src="../assets/img/titulo 3.png" alt="img para titulo de Galeria">
                     <img class="imgtittle" src="../assets/img/titulo 4.png" alt="img para titulo de Galeria">
-                </section>
-
-                
-            </div>
-            <div class="container col">
+            </section>
+            <!--vista preliminar de diseños-->
+            <!--Galería de tatuajes-->
+            <!--Necesito mas imagenes para llenar más pero aún no las consigo-->
+            <section class="col">
                 <div class="row my-5">
-                    <h2 class="subti text-lg-center">Frente completo</h2>
+                    <h3 class="subti text-lg-center">Frente completo</h2>
                     <div class="col-lg-4 col-xs-12">
                         <img src="../assets/img/tatuaje1.jpg" alt="tattopecho1" class="img-thumbnail imggaleria">
                     </div>
@@ -65,7 +68,7 @@
                     </div>
                 </div>
                 <div class="row align-items-center mt-5">
-                    <h2 class="subti text-lg-center">Mangas</h2>
+                    <h3 class="subti text-lg-center">Mangas</h2>
                     <div class="col-lg-4 col-xs-12">
                         <img src="../assets/img/tatuajebrazo1.png" alt="tattobrazo1" class="img-thumbnail imggaleria">
                     </div>
@@ -76,16 +79,18 @@
                         <img src="../assets/img/tatuajebrazo3.jpg" alt="tattobrazo3" class="img-thumbnail imggaleria">
                     </div>
                 </div>
-            </div>
+            </section>
+            <!--Galería de tatuajes-->
             </div>
         </main>
+        <!--footer-->
         <footer class="piePag container-fluid" >
             <div class="container row align-items-center">
                 <div class="col-sm">
-                    <a href="#"><i class="fa-solid fa-circle-arrow-up instagram"></i></a>
+                    <a href="#"><i class="fa-solid fa-circle-arrow-up btnup"></i></a>
                 </div>
                 <div class="col-sm">
-                    <a href="https://www.instagram.com/" target="_blank">
+                    <a href="https://www.instagram.com/blackmoontattooba/" target="_blank">
                         <i class="fa-brands fa-instagram instagram"></i>
                     </a>
                     <p class="foottxt pt-1">Paraguay 3605, Palermo, CABA <a href="./contacto.html#mapa"><i class="fa-solid fa-location-dot mapicon"></i></a></p>
@@ -99,6 +104,7 @@
                 </div>
             </div>
         </footer>
+        <!--footer-->
         <script src="../js/bootstrap.bundle.min.js"></script> 
     </body>
 </html>

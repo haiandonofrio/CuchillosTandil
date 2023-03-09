@@ -5,7 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BlackMoonTatoo</title>
-        <!--el icono es temporal hasta encontrar uno mejor -->
         <link rel="icon" href="../favicon.ico">
         <script src="https://kit.fontawesome.com/b0eac78012.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css">
@@ -14,9 +13,11 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
+        <!--Header-->
         <header class="container-fluid header sticky-top">
             <div class="row headercolor">
             <div class="col-lg-12 col-xs-12">
+                <!--Navegador Responsive con boton-->
                 <nav class="navbar navbar-expand-lg navbar-light headercolor">
                 <a class="navbar-brand logopos" href="../index.html"><img src="../assets/img/logo.png" alt="logomain" class="img-fluid logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -35,38 +36,50 @@
             </div>
             </div>
         </header>
+        <!--Header-->
         <main class="container-fluid bg-tatuador">
             <div class="container bgcolor">
             <section class="container">
-            <section>
+            <!--Titulo Nosotros-->
+            <section class="bgbanner">
                 <div>
                     <h1 class="tittle pb-4">Sobre Nosotros</h1>
                 </div>
                 <div>
                     <h2 class="subti text-center pb-4">Conocé a nuestros expertos tatuadores</h2>
-                    <h3 class="parrNos">Somos un estudio pequeño, dedicado a realizar trabajos personalizados de alta calidad. Nos enfocamos en que el cliente obtenga un resultado que supere sus espectativas y realizamos cada diseño en base a las ideas que tengas.</h3>
+                    <h3 class="parrMain text-center">Somos un estudio pequeño, dedicado a realizar trabajos personalizados de alta calidad. Nos enfocamos en que el cliente obtenga un resultado que supere sus espectativas y realizamos cada diseño en base a las ideas que tengas.</h3>
                 </div>
             </section>
+            <!--Titulo Nosotros-->
+            <!--Info de los tatuadores-->
             <section class="py-lg-5 py-3">
                 <h2 data-aos="fade-up" data-aos-offset="300" class="subti py-lg-5 text-center">Lautaro Cano</h2>
-                <div data-aos="fade-up-right" class="row">
+                <div data-aos="fade-up-right" class="row bgnosotros">
                     <div class="col-xs-12 col-lg-6">
                         <img src="../assets/img/tatuador hombre" alt="Lautaro" class="img-fluid tatuador">
                     </div>
-                    <div data-aos="fade-up-left" class="col-xs-12 col-lg-6 parrMain p-4 flex-dummy">
-                        <p>Aficionado por el arte y las ilustraciones, Lautaro es un joven entusiaste
+                    <div data-aos="fade-up-left" class="col-xs-12 col-lg-6 p-4 flex-dummy">
+                        <p class="parrMain">Aficionado por el arte y las ilustraciones, Lautaro es un joven entusiaste
                         que de temprana edad empezó con su propio estudio.
                         </p>
-                        <p>Sus diseños basados en el realismo destacan sobre otros tatuadores y considerando
+                        <p class="parrMain">Sus diseños basados en el realismo destacan sobre otros tatuadores y considerando
                             lo joven que es esperamos mucho de su trabajo en un futuro.
+                        </p>
+                        <p class="text-center"><a href="https://www.instagram.com/cano_tattoo/" target="_blank">
+                            <i class="fa-brands fa-instagram instagramNos"></i>
+                        </a>
                         </p>
                     </div>
                 </div>
                 <h2 data-aos="fade-left" class="subti text-center py-lg-5">Caro Camarata</h2>
-                <div class="row">
-                    <div data-aos="fade-right" class="col-xs-12 col-lg-6 parrMain p-4 flex-dummy">
-                        <p>A diferencia de su compañero Lautaro, Caro se dedica a realizar diseños vanguardista
+                <div class="row bgnosotros">
+                    <div data-aos="fade-right" class="col-xs-12 col-lg-6 p-4 flex-dummy">
+                        <p class="parrMain">A diferencia de su compañero Lautaro, Caro se dedica a realizar diseños vanguardista
                             , haciendo uso de multiples técnicas que le permite su infinita capacidad.
+                        </p>
+                        <p class="text-center"><a href="https://www.instagram.com/carocamarata/" target="_blank">
+                            <i class="fa-brands fa-instagram instagramNos"></i>
+                        </a>
                         </p>
                     </div>
                     <div data-aos="fade-down-left"class="col-xs-12 col-lg-6 order-xs-first">
@@ -74,16 +87,18 @@
                     </div>
                 </div>
             </section>
+            <!--Info de los tatuadores-->
         </section>
         </div>
         </main>
+        <!--footer-->
         <footer class="piePag container-fluid" >
             <div class="container row align-items-center">
                 <div class="col-sm">
-                    <a href="#"><i class="fa-solid fa-circle-arrow-up instagram"></i></a>
+                    <a href="#"><i class="fa-solid fa-circle-arrow-up btnup"></i></a>
                 </div>
                 <div class="col-sm">
-                    <a href="https://www.instagram.com/" target="_blank">
+                    <a href="https://www.instagram.com/blackmoontattooba/" target="_blank">
                         <i class="fa-brands fa-instagram instagram"></i>
                     </a>
                     <p class="foottxt pt-1">Paraguay 3605, Palermo, CABA <a href="./contacto.html#mapa"><i class="fa-solid fa-location-dot mapicon"></i></a></p>
@@ -97,11 +112,13 @@
                 </div>
             </div>
         </footer>
+        <!--footer-->
         <script src="../js/bootstrap.bundle.min.js"></script> 
+        <!--Animacion AOS-->
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-         <script>
-         AOS.init();
-         </script>
+        <script>
+            AOS.init();
+        </script>
 
     </body>
 </html>

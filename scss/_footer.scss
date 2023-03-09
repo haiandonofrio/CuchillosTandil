@@ -12,17 +12,34 @@
     border-color: black;
 
 }
-
+.btnup{
+    @include redes(instagram);
+}
+.btnup:hover{
+    color: map-get($map-redes, colorup );
+}
 .instagram{
     @include redes(instagram);
     }
 
+    .instagram:hover{
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); 
+        -webkit-background-clip: text;   
+                background-clip: text; 
+        -webkit-text-fill-color: transparent;
+    }
 .linkedin{
     @include redes(linkedin);
     }
 
+    .linkedin:hover{
+        color: map-get($map-redes, colorlkdin );
+    }
 .mapicon{
     @include redes(map);
     }
 
+    .mapicon:hover{
+        color: map-get($map-redes, colormap );
+    }
 /*Footer*/
