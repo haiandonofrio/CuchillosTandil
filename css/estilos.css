@@ -26,6 +26,12 @@
   flex-direction: column;
   justify-content: center; }
 
+:root {
+  --animate-delay: 1s; }
+
+.contenedorAnimacion {
+  overflow: hidden; }
+
 /*inicializacion*/
 * {
   margin: 0;

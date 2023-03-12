@@ -9,8 +9,9 @@
         <script src="https://kit.fontawesome.com/b0eac78012.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css">
         <link rel="stylesheet" href="../css/bootstrap.min.css" >
-        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="../css/estilos.css">
     </head>
     <body>
         <!--Header-->
@@ -52,14 +53,14 @@
             </section>
             <!--Titulo Nosotros-->
             <!--Info de los tatuadores-->
-            <section class="py-lg-5 py-3">
-                <h2 data-aos="fade-up" data-aos-offset="300" class="subti py-lg-5 text-center">Lautaro Cano</h2>
-                <div data-aos="fade-up-right" class="row bgnosotros">
+            <section class="py-lg-5 py-3 contenedorAnimacion">
+                <h2 data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="300" class="subti py-lg-5 text-center">Lautaro Cano</h2>
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300" class="row bgnosotros">
                     <div class="col-xs-12 col-lg-6">
                         <img src="../assets/img/tatuador hombre" alt="Lautaro" class="img-fluid tatuador">
                     </div>
-                    <div data-aos="fade-up-left" class="col-xs-12 col-lg-6 p-4 flex-dummy">
-                        <p class="parrMain">Aficionado por el arte y las ilustraciones, Lautaro es un joven entusiaste
+                    <div data-aos="fade-left" data-aos-offset="300" data-aos-duration="3000" class="col-xs-12 col-lg-6 p-4 flex-dummy">
+                        <p class="parrMain">Aficionado por el arte y las ilustraciones, Lautaro es un joven entusiasta
                         que de temprana edad empezó con su propio estudio.
                         </p>
                         <p class="parrMain">Sus diseños basados en el realismo destacan sobre otros tatuadores y considerando
@@ -71,18 +72,18 @@
                         </p>
                     </div>
                 </div>
-                <h2 data-aos="fade-left" class="subti text-center py-lg-5">Caro Camarata</h2>
+                <h2 data-aos="zoom-in" data-aos-offset="300" data-aos-duration="1000" class="subti text-center py-lg-5">Caro Camarata</h2>
                 <div class="row bgnosotros">
-                    <div data-aos="fade-right" class="col-xs-12 col-lg-6 p-4 flex-dummy">
+                    <div data-aos="fade-right" data-aos-duration="3000" data-aos-offset="300" class="col-xs-12 col-lg-6 p-4 flex-dummy">
                         <p class="parrMain">A diferencia de su compañero Lautaro, Caro se dedica a realizar diseños vanguardista
-                            , haciendo uso de multiples técnicas que le permite su infinita capacidad.
+                            , haciendo uso de múltiples técnicas que le permite su infinita capacidad.
                         </p>
                         <p class="text-center"><a href="https://www.instagram.com/carocamarata/" target="_blank">
                             <i class="fa-brands fa-instagram instagramNos"></i>
                         </a>
                         </p>
                     </div>
-                    <div data-aos="fade-down-left"class="col-xs-12 col-lg-6 order-xs-first">
+                    <div data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000" class="col-xs-12 col-lg-6 order-xs-first">
                     <img src="../assets/img/tatuadora mujer.jpg" alt="Carolina" class="img-fluid tatuador" >
                     </div>
                 </div>
@@ -119,6 +120,5 @@
         <script>
             AOS.init();
         </script>
-
     </body>
 </html>
