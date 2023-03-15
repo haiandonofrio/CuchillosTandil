@@ -37,7 +37,6 @@
 
 .imggaleria:hover{
     filter: brightness(100%) sepia(30%) contrast(1.8) drop-shadow(0 0 10px rgb(155, 154, 154));
-    transform: scale(1.2);
     opacity: 1;
     z-index: 10;
     overflow:hidden;
