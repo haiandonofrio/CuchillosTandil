@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Estudio artistístico de tatuaje ubicado en Buenos Aires. Realizamos todo tipo de diseños, originales como tus propias ideas con una excelente calidad.">
         <meta name="keywords" content="HTML, CSS, META, TATUAJES, PALERMO, CANO, CAMARATA, BUENOS AIRES, ORIGINALES, TATTOO, REALISMO, ARTÍSTICO,ANIME, ARTE, ESTUDIO, TATUADORES,CONTACTO">
-        <title>BlackMoonTatoo</title>
+        <title>BlackMoonTatoo-Contacto</title>
         <link rel="icon" href="../favicon.ico">
         <script src="https://kit.fontawesome.com/b0eac78012.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css">
@@ -29,10 +29,11 @@
                     </button>
                     <div class="navbar-collapse justify-content-end nav nav-tabs" id="navbarNav">
                         <ul class="navbar-nav spanColor">
-                        <li class="nav-item"><a  class="nav-link links" href="./nosotros.html">Nosotros<span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a  class="nav-link links" href="../index.html">Inicio</a></li>    
+                        <li class="nav-item"><a  class="nav-link links" href="./nosotros.html">Nosotros</a></li>
                         <li class="nav-item"><a  class="nav-link links" href="./galeria.html">Galeria</a></li>
                         <li class="nav-item"><a  class="nav-link links" href="./cuidados.html">Cuidados</a></li>
-                        <li class="nav-item"><a  class="nav-link links" href="./contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a  class="nav-link links" href="./contacto.html">Contacto<span class="sr-only">(current)</span></a></li>
                         </ul>
                     </div>
                     </nav>
@@ -54,15 +55,15 @@
                         <fieldset>
                             <div class="row py-3">
                                 <label class="col-lg-5 col-xs-12" for="Nombre"><p class="parrMain">Nombre y Apellido*</p></label>
-                                <input class="col-lg-7 col-xs-12 field" type="text" name="" id="">
+                                <input class="col-lg-7 col-xs-12 field" type="text" name="Nombre" id="nombre" required>
                             </div>
                             <div class="row py-3">
                                 <label class="col-lg-3 col-xs-12" for="Indique su mail"><p class="parrMain">Email*</p></label>
-                                <input class="col-lg-9 col-xs-12 field" type="email" name="" id="" placeholder="haianjoel@hotmail.com">
+                                <input class="col-lg-9 col-xs-12 field" type="email" name="email" id="email" placeholder="haianjoel@hotmail.com" required>
                             </div>
                             <div class="row py-3">
-                                <label class="col-lg-3 col-xs-12"for=""><p class="parrMain align-self-start">Mensaje*</p></label>
-                                <textarea class="col-lg-9 col-xs-12 field" name="" id="" cols="50" rows="10" placeholder="Ingrese un Comentario"></textarea>
+                                <label class="col-lg-3 col-xs-12"for=""><p class="parrMain align-self-start">Mensaje</p></label>
+                                <textarea class="col-lg-9 col-xs-12 field" name="texto" id="texto" cols="50" rows="10" placeholder="Ingrese un Comentario"></textarea>
                             </div>
                             <div class="d-flex justify-content-end py-3">
                                 <input class="FormBoton px-1 mx-2" type="submit" value="Enviar Mensaje">
