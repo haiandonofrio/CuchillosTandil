@@ -6,12 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Estudio artistístico de tatuaje ubicado en Buenos Aires. Realizamos todo tipo de diseños, originales como tus propias ideas con una excelente calidad.">
         <meta name="keywords" content="HTML, CSS, META, TATUAJES, PALERMO, CANO, CAMARATA, BUENOS AIRES, ORIGINALES, TATTOO, REALISMO, ARTÍSTICO,ANIME, ARTE, ESTUDIO, TATUADORES">
-        <title>BlackMoonTatoo</title>
+        <title>BlackMoonTattoo</title>
         <link rel="icon" href="./favicon.ico">
         <script src="https://kit.fontawesome.com/b0eac78012.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./css/bootstrap.min.css" >
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="./css/hamburguer.css">
         <link rel="stylesheet" href="./css/estilos.css">
     </head>
     <body>
@@ -22,9 +23,11 @@
                 <!--Navegador Responsive con boton-->
                 <nav class="navbar navbar-expand-lg navbar-light headercolor">
                 <a class="navbar-brand logopos" href="#"><img src="./assets/img/logo.png" alt="logomain" class="img-fluid logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="hamburger hamburger--elastic navbar-toggler is-active" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-label="Menú" aria-controls="navbarNav">
+                    <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                    </span>
                 </button>
                 <div class="navbar-collapse justify-content-end nav nav-tabs" id="navbarNav">
                     <ul class="navbar-nav spanColor">
@@ -54,7 +57,7 @@
             
                     <div class="container">
                     <div class="carousel-caption text-end">
-                        <h2 class="tittle2">BlackMoon Tatoo</h2>
+                        <h2 class="tittle2">BlackMoon Tattoo</h2>
                         <p >Conocé a nuestros tatuadores profesionales</p>
                         <p><a class="btn btn-lg bgBoton text-white" href="./pages/nosotros.html">Leer Más</a></p>
                     </div>
@@ -65,7 +68,7 @@
             
                     <div class="container">
                     <div class="carousel-caption text-start">
-                        <h2 class="tittle2">BlackMoon Tatoo</h2>
+                        <h2 class="tittle2">BlackMoon Tattoo</h2>
                         <p >Inspirate con nuestros trabajos anteriores</p>
                         <p><a class="btn btn-lg bgBoton text-white" href="./pages/trabajos.html">Leer Más</a></p>
                     </div>
@@ -75,7 +78,7 @@
                     <img src="./assets/img/carrusel3.jpg" class="d-block w-100" alt="link_cuidados">
                     <div class="container">
                     <div class="carousel-caption text-center">
-                        <h2 class="tittle2">BlackMoon Tatoo</h2>
+                        <h2 class="tittle2">BlackMoon Tattoo</h2>
                         <p >Mirá nuestros consejos para cuidar tu tatuaje</p>
                         <p><a class="btn btn-lg bgBoton text-white" href="./pages/cuidados.html">Leer Más</a></p>
                     </div>
@@ -95,7 +98,7 @@
             <!--Titulo Principal-->
             <div class="contenedorAnimacion">
             <section class="container bgbanner border-bottom border-dark border-4 mb-4 row">
-                <h1 data-aos="zoom-in" data-aos-duration="1000"  class="tittle col-lg-12 col-xs-12">BlackMoon Tatoo</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1000"  class="tittle col-lg-12 col-xs-12">BlackMoon Tattoo</h1>
             </section>
             <!--Titulo Principal-->
             <div class="container  bgimg">
@@ -151,6 +154,16 @@
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             AOS.init();
+        </script>
+        <script>
+            // Look for .hamburger
+            var hamburger = document.querySelector(".hamburger");
+            // On click
+            hamburger.addEventListener("click", function() {
+              // Toggle class "is-active"
+            hamburger.classList.toggle("is-active");
+              // Do something else, like open/close menu
+            });
         </script>
     </body>
 </html>

@@ -6,13 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Estudio artistístico de tatuaje ubicado en Buenos Aires. Realizamos todo tipo de diseños, originales como tus propias ideas con una excelente calidad.">
         <meta name="keywords" content="HTML, CSS, META, TATUAJES, PALERMO, CANO, CAMARATA, BUENOS AIRES, ORIGINALES, TATTOO, REALISMO, ARTÍSTICO,ANIME, ARTE, ESTUDIO, TATUADORES">
-        <title>Galería - BlackMoonTatoo</title>
+        <title>Galería - BlackMoonTattoo</title>
         <link rel="icon" href="../favicon.ico">
         <script src="https://kit.fontawesome.com/b0eac78012.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css">
         <link rel="stylesheet" href="../css/bootstrap.min.css" >
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="../css/hamburguer.css">
         <link rel="stylesheet" href="../css/estilos.css">
     </head>
     <body>
@@ -23,9 +24,11 @@
                 <!--Navegador Responsive con boton-->
                 <nav class="navbar navbar-expand-lg navbar-light headercolor">
                 <a class="navbar-brand logopos" href="../index.html"><img src="../assets/img/logo.png" alt="logomain" class="img-fluid logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="hamburger hamburger--elastic navbar-toggler is-active" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-label="Menú" aria-controls="navbarNav">
+                    <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                    </span>
                 </button>
                 <div class="navbar-collapse justify-content-end nav nav-tabs" id="navbarNav">
                     <ul class="navbar-nav spanColor">
@@ -50,7 +53,7 @@
             </section>
             <!--Titulo Galeria-->
             <!--vista preliminar de diseños-->
-            <section class="flex-dinamic-row GalTitulo">
+            <section class="flex-dinamic-row GalTitulo mb-4">
                     <img class="imgtittle" src="../assets/img/titulo 1.png" alt="img para titulo de Galeria">
                     <img class="imgtittle" src="../assets/img/titulo 2.png" alt="img para titulo de Galeria">
                     <img class="imgtittle" src="../assets/img/titulo 3.png" alt="img para titulo de Galeria">
@@ -58,95 +61,112 @@
             </section>
             <!--vista preliminar de diseños-->
             <!--Galería de tatuajes-->
-            <!--Necesito mas imagenes para llenar más pero aún no las consigo-->
-            <section class="col contenedorAnimacion">
-                <div class="row my-5">
-                    <h3 data-aos="zoom-in" data-aos-duration="2000"  class="subti text-lg-center">Frente completo</h3>
-                    <section data-aos="fade-right" data-aos-duration="1000" class="row mx-auto">
-                    <!-- frente1 -->
-            <div class="col-lg-4 col-xs-12">
-                <img src="../assets/img/tatuaje1.jpg" alt="tattopecho1" data-bs-toggle="modal" data-bs-target="#tattopecho1" class="img-thumbnail imggaleria">
+            <section class="container galeria"> <!--contenedorAnimacion">-->
+            <!-- Tatuaje1-->
+            <div class="galeria_imagenes galeria_imagenes--g1">
+                <img src="../assets/img/tatuajebrazo1.png" alt="tattoo1" data-bs-toggle="modal" data-bs-target="#tattoo1" class="imggaleria">
             </div>
-            <div class="modal fade" id="tattopecho1">
+            <div class="modal fade" id="tattoo1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
-                        <img src="../assets/img/tatuaje1.jpg" class="gallery-item" alt="gallery">
+                        <img src="../assets/img/tatuajebrazo1.png" class="gallery-item" alt="gallery">
                     </div>
                 </div>
             </div>
-            <!-- frente2 -->
-            <div class="col-lg-4 col-xs-12 mx-auto">
-                <img src="../assets/img/tatuaje2.jpg" alt="tattopecho2" data-bs-toggle="modal" data-bs-target="#tattopecho2" class="img-thumbnail imggaleria">
+            <!-- Tatuaje2-->
+            <div class="galeria_imagenes galeria_imagenes--g2">
+                <img src="../assets/img/tatuajebrazo2.png" alt="tattoo2" data-bs-toggle="modal" data-bs-target="#tattoo2" class="imggaleria">
             </div>
-            <div class="modal fade" id="tattopecho2">
+            <div class="modal fade" id="tattoo2">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
-                        <img src="../assets/img/tatuaje2.jpg" class="gallery-item" alt="gallery">
+                        <img src="../assets/img/tatuajebrazo2.png" class="gallery-item" alt="gallery">
                     </div>
                 </div>
             </div>
-            <!-- frente3 -->
-            <div class="col-lg-4 col-xs-12">
-                <img src="../assets/img/tatuaje3.jpg" alt="tattopecho3" data-bs-toggle="modal" data-bs-target="#tattopecho3" class="img-thumbnail imggaleria">
+            <!-- Tatuaje3-->
+            <div class="galeria_imagenes galeria_imagenes--g3">
+                <img src="../assets/img/tatuajediablo.jpg" alt="tattoo3" data-bs-toggle="modal" data-bs-target="#tattoo3" class="imggaleria">
             </div>
-            <div class="modal fade" id="tattopecho3">
+            <div class="modal fade" id="tattoo3">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <img src="../assets/img/tatuajediablo.jpg" class="gallery-item" alt="gallery">
+                    </div>
+                </div>
+            </div>
+            <!-- Tatuaje4-->
+            <div class="galeria_imagenes galeria_imagenes--g4">
+                <img src="../assets/img/tatuaje3.jpg" alt="tattoo4" data-bs-toggle="modal" data-bs-target="#tattoo4" class="imggaleria">
+            </div>
+            <div class="modal fade" id="tattoo4">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <img src="../assets/img/tatuaje3.jpg" class="gallery-item" alt="gallery">
                     </div>
                 </div>
             </div>
-                </section>
+            <!-- Tatuaje5-->
+            <div class="galeria_imagenes galeria_imagenes--g5">
+                <img src="../assets/img/tatuajebrazo4.png" alt="tattoo5" data-bs-toggle="modal" data-bs-target="#tattoo5" class="imggaleria">
+            </div>
+            <div class="modal fade test" id="tattoo5">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <img src="../assets/img/tatuajebrazo4.png" class="gallery-item" alt="gallery">
+                    </div>
                 </div>
-                <div class="row align-items-center mt-5">
-                    <h3 data-aos="zoom-in" data-aos-duration="2000"  class="subti text-lg-center">Mangas</h3>
-                    <section data-aos="fade-left" data-aos-duration="1000" class="row mx-auto">
-                    <!--<div class="col-lg-4 col-xs-12">
-                        <img src="../assets/img/tatuajebrazo1.png" alt="tattobrazo1" class="img-thumbnail imggaleria">
+            </div> 
+            <!-- Tatuaje6-->
+            <div class="galeria_imagenes galeria_imagenes--g6">
+                <img src="../assets/img/tatuajebrazo3.jpg" alt="tattoo6" data-bs-toggle="modal" data-bs-target="#tattoo6" class="imggaleria">
+            </div>
+            <div class="modal fade" id="tattoo6">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <img src="../assets/img/tatuajebrazo3.jpg" class="gallery-item" alt="gallery">
                     </div>
-                    <div class="col-lg-4 col-xs-12">
-                        <img src="../assets/img/tatuajebrazo2.png" alt="tattobrazo2" class="img-thumbnail imggaleria">
-                    </div>
-                    <div class="col-lg-4 col-xs-12">
-                        <img src="../assets/img/tatuajebrazo3.jpg" alt="tattobrazo3" class="img-thumbnail imggaleria">
-                    </div>-->
-                    <!-- Manga1 -->
-                    <div class="col-lg-4 col-xs-12">
-                        <img src="../assets/img/tatuajebrazo1.png" alt="tattomanga1" data-bs-toggle="modal" data-bs-target="#tattomanga1" class="img-thumbnail imggaleria">
-                    </div>
-                    <div class="modal fade" id="tattomanga1">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <img src="../assets/img/tatuajebrazo1.png" class="gallery-item" alt="gallery">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Manga2 -->
-                    <div class="col-lg-4 col-xs-12">
-                        <img src="../assets/img/tatuajebrazo2.png" alt="tattomanga2" data-bs-toggle="modal" data-bs-target="#tattomanga2" class="img-thumbnail imggaleria">
-                    </div>
-                    <div class="modal fade" id="tattomanga2">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <img src="../assets/img/tatuajebrazo2.png" class="gallery-item" alt="gallery">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Manga3 -->
-                    <div class="col-lg-4 col-xs-12">
-                        <img src="../assets/img/tatuajebrazo3.jpg" alt="tattomanga3" data-bs-toggle="modal" data-bs-target="#tattomanga3" class="img-thumbnail imggaleria">
-                    </div>
-                    <div class="modal fade" id="tattomanga3">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <img src="../assets/img/tatuajebrazo3.jpg" class="gallery-item" alt="gallery">
-                            </div>
-                        </div>
-                    </div>
-
-                </section>
                 </div>
-            </section>
+            </div>
+            <!-- Tatuaje7-->
+            <div class="galeria_imagenes galeria_imagenes--g7">
+                <img src="../assets/img/tatuaje2.jpg" alt="tattoo7" data-bs-toggle="modal" data-bs-target="#tattoo7" class="imggaleria">
+            </div>
+            <div class="modal fade" id="tattoo7">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <img src="../assets/img/tatuaje2.jpg" class="gallery-item" alt="gallery">
+                    </div>
+                </div>
+            </div>
+            <!-- Tatuaje8-->
+            <div class="galeria_imagenes--g8 video">
+                <video class="videogaleria" preload="metadata" muted playsinline onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" poster="../assets/img/tatuajediablo.jpg">
+                    <source src="../assets/video/tatuajediablo.MOV" type="video/mp4"></source>
+                </video>
+            </div>
+            <!-- Tatuaje9-->
+            <div class="galeria_imagenes galeria_imagenes--g9">
+                <img src="../assets/img/tatuaje6.jpg" alt="tattoo9" data-bs-toggle="modal" data-bs-target="#tattoo9" class="imggaleria">
+            </div>
+            <div class="modal fade" id="tattoo9">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <img src="../assets/img/tatuaje6.jpg" class="gallery-item" alt="gallery">
+                    </div>
+                </div>
+            </div>
+            <!-- Tatuaje10--> 
+            <div class="galeria_imagenes galeria_imagenes--g10">
+                <img src="../assets/img/tatuaje1.jpg" alt="tattoo10" data-bs-toggle="modal" data-bs-target="#tattoo10" class="imggaleria">
+            </div>
+            <div class="modal fade" id="tattoo10">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <img src="../assets/img/tatuaje1.jpg" class="gallery-item" alt="gallery">
+                    </div>
+                </div>
+            </div>                   
             <!--Galería de tatuajes-->
             </div>
         </main>
@@ -177,6 +197,16 @@
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             AOS.init();
+        </script>
+        <script>
+            // Look for .hamburger
+            var hamburger = document.querySelector(".hamburger");
+            // On click
+            hamburger.addEventListener("click", function() {
+              // Toggle class "is-active"
+            hamburger.classList.toggle("is-active");
+              // Do something else, like open/close menu
+            });
         </script>
     </body>
 </html>

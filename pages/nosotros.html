@@ -6,13 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Estudio artistístico de tatuaje ubicado en Buenos Aires. Realizamos todo tipo de diseños, originales como tus propias ideas con una excelente calidad.">
         <meta name="keywords" content="HTML, CSS, META, TATUAJES, PALERMO, CANO, CAMARATA, BUENOS AIRES, ORIGINALES, TATTOO, REALISMO, ARTÍSTICO,ANIME, ARTE, ESTUDIO, TATUADORES, NOSOTROS">
-        <title>Sobre Nosotros - BlackMoonTatoo</title>
+        <title>Sobre Nosotros - BlackMoonTattoo</title>
         <link rel="icon" href="../favicon.ico">
         <script src="https://kit.fontawesome.com/b0eac78012.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css">
         <link rel="stylesheet" href="../css/bootstrap.min.css" >
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="../css/hamburguer.css">
         <link rel="stylesheet" href="../css/estilos.css">
     </head>
     <body>
@@ -23,9 +24,11 @@
                 <!--Navegador Responsive con boton-->
                 <nav class="navbar navbar-expand-lg navbar-light headercolor">
                 <a class="navbar-brand logopos" href="../index.html"><img src="../assets/img/logo.png" alt="logomain" class="img-fluid logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="hamburger hamburger--elastic navbar-toggler is-active" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-label="Menú" aria-controls="navbarNav">
+                    <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                    </span>
                 </button>
                 <div class="navbar-collapse justify-content-end nav nav-tabs" id="navbarNav">
                     <ul class="navbar-nav spanColor">
@@ -57,8 +60,8 @@
             <!--Titulo Nosotros-->
             <!--Info de los tatuadores-->
             <section class="py-lg-5 py-3 contenedorAnimacion">
-                <h2 data-aos="zoom-in" data-aos-duration="1000"  data-aos-offset="200" class="subti py-lg-5 text-center">Lautaro Cano</h2>
                 <div data-aos="fade-right" data-aos-duration="1000" class="row bgnosotros">
+                    <h2 data-aos="zoom-in" data-aos-duration="1000"  data-aos-offset="200" class="subti py-lg-5 text-center">Lautaro Cano</h2>
                     <div class="col-xs-12 col-lg-6">
                         <img src="../assets/img/tatuador hombre" alt="Lautaro" class="img-fluid tatuador">
                     </div>
@@ -75,8 +78,8 @@
                         </p>
                     </div>
                 </div>
-                <h2 data-aos="zoom-in" data-aos-duration="1000" class="subti text-center py-lg-5">Caro Camarata</h2>
                 <div class="row bgnosotros">
+                    <h2 data-aos="zoom-in" data-aos-duration="1000" class="subti text-center py-lg-5">Caro Camarata</h2>
                     <div data-aos="fade-right" data-aos-duration="1500" class="col-xs-12 col-lg-6 p-4 flex-dummy">
                         <p class="parrMain">A diferencia de su compañero Lautaro, Caro se dedica a realizar diseños vanguardista
                             , haciendo uso de múltiples técnicas que le permite su infinita capacidad.
@@ -122,6 +125,16 @@
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             AOS.init();
+        </script>
+        <script>
+            // Look for .hamburger
+            var hamburger = document.querySelector(".hamburger");
+            // On click
+            hamburger.addEventListener("click", function() {
+              // Toggle class "is-active"
+            hamburger.classList.toggle("is-active");
+              // Do something else, like open/close menu
+            });
         </script>
     </body>
 </html>
