@@ -27,7 +27,7 @@
 
 .galeria_imagenes{
     position:relative;
-    cursor:pointer;
+    cursor:zoom-in;
     /*que se esnconda todo lo que salga de ese elemento
     ya que este elemento va a referenciar a un texto */
     overflow: hidden;
@@ -49,6 +49,8 @@
     transform: scaleY(0);
     transition: transform .4s;
     color:white;
+    filter: brightness(130%);
+    text-shadow: $font-shadow;
     display:flex;
     justify-content: center;
     align-items:center ;
@@ -63,7 +65,7 @@
 }
 
 .galeria{
-    padding-bottom : 3em;
+    padding-bottom : 1em;
     padding-top: 1em;
     display:grid;
     grid-template-columns: repeat(6 , 1fr);
