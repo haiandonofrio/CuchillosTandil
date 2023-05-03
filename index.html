@@ -31,9 +31,21 @@
                     </span>
                 </button>
                 <div class="navbar-collapse justify-content-end nav nav-tabs" id="navbarNav">
-                    <ul class="navbar-nav spanColor">
+                    <ul class="navbar-nav spanColor nav nav-tabs">
                     <li class="nav-item"><a  class="nav-link links" href="./index.html">Inicio<span class="sr-only">(current)</span></a></li>
-                    <li class="nav-item"><a  class="nav-link links" href="./pages/galeria.html">Galería</a></li>
+
+                    <li class="nav-item dropdown"><a  class="dropdown-toggle nav-link links" data-bs-toggle="dropdown" href="./pages/galeria.html" role="button" aria-expanded="false">
+                    Galería</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./pages/galeria.html">Todos los productos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="./pages/galeria.html">Cuchillos1</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="./pages/galeria.html">Cuchillos2</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="./pages/galeria.html">Cuchillos3</a></li>
+                    </ul>
+                    </li>
                     <li class="nav-item"><a  class="nav-link links" href="./pages/contacto.html">Contacto</a></li>
                     </ul>
                 </div>
@@ -41,10 +53,10 @@
             </div>
             </div>
         </header>
-        <main class="container-fluid bg-tatuador">
-            <div class="container bgcolor">
+        <main class="container-fluid bg-dark">
+            
             <!--Carrusel-->
-            <div id="myCarousel" class="carousel slide container-fluid" data-bs-ride="carousel">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -52,34 +64,34 @@
                 </div>
                 <div class="carousel-inner">
                 <div class="carousel-item active"> 
-                    <img src="./assets/img/tatuadora mujer.jpg" class="d-block w-100" alt="link_tatuadores">
+                    <img src="./assets/img/Cuchillos de monte.jpg" class="d-block" alt="link_tatuadores">
             
-                    <div class="container">
+                    <div class="container-fluid">
                     <div class="carousel-caption text-end">
                         <h2 class="tittle2">MW TANDIL</h2>
-                        <p >Conocé a nuestros tatuadores profesionales</p>
-                        <p><a class="btn btn-lg bgBoton text-white" href="./pages/nosotros.html">Leer Más</a></p>
+                        <p ></p>
+                        <p><a class="btn btn-lg bgBoton text-white" href="./pages/galeria.html">Leer Más</a></p>
                     </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/img/background.png" class="d-block w-100" alt="link_galeria">
+                    <img src="./assets/img/cuchillos1 080.jpg" class="d-block" alt="link_galeria">
             
-                    <div class="container">
+                    <div class="container-fluid">
                     <div class="carousel-caption text-start">
                         <h2 class="tittle2">MW TANDIL</h2>
                         <p >Inspirate con nuestros trabajos anteriores</p>
-                        <p><a class="btn btn-lg bgBoton text-white" href="./pages/trabajos.html">Leer Más</a></p>
+                        <p><a class="btn btn-lg bgBoton text-white" href="./pages/galeria.html">Leer Más</a></p>
                     </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/img/carrusel3.jpg" class="d-block w-100" alt="link_cuidados">
-                    <div class="container">
+                    <img src="./assets/img/verano 2007 038.jpg" class="d-block" alt="link_cuidados">
+                    <div class="container-fluid">
                     <div class="carousel-caption text-center">
                         <h2 class="tittle2">MW TANDIL</h2>
-                        <p >Mirá nuestros consejos para cuidar tu tatuaje</p>
-                        <p><a class="btn btn-lg bgBoton text-white" href="./pages/cuidados.html">Leer Más</a></p>
+                        <p ></p>
+                        <p><a class="btn btn-lg bgBoton text-white" href="./pages/galeria.html">Leer Más</a></p>
                     </div>
                     </div>
                 </div>
@@ -95,6 +107,7 @@
             </div>
             <!--Carrusel-->
             <!--Titulo Principal-->
+            <div class="container bg-body">
             <div class="contenedorAnimacion">
             <section class="container bgbanner border-bottom border-dark border-4 mb-4 row">
                 <h1 data-aos="zoom-in" data-aos-duration="1000"  class="tittle col-lg-12 col-xs-12">MW TANDIL</h1>
