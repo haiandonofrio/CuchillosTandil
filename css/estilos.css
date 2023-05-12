@@ -26,6 +26,18 @@
   flex-direction: column;
   justify-content: center; }
 
+.whatsapp {
+  object-fit: cover;
+  border-radius: 148px 148px 148px 148px;
+  -webkit-border-radius: 148px 148px 148px 148px;
+  -moz-border-radius: 148px 148px 148px 148px;
+  /*puedo poner un if dentro de una clase tambien */
+  color: #25d366;
+  position: fixed;
+  bottom: 10px;
+  right: 35px;
+  font-size: 2em; }
+
 :root {
   --animate-delay: 1s; }
 
@@ -169,7 +181,7 @@
 .btnup {
   /*puedo poner un if dentro de una clase tambien */
   color: #e6dfe2;
-  font-size: 2em;
+  font-size: 1.5em;
   padding: 2% 0; }
 
 .btnup:hover {

@@ -13,7 +13,7 @@
 
 }
 .btnup{
-    @include redes(instagram);
+    @include redes(up);
 }
 .btnup:hover{
     color: map-get($map-redes, colorup );
@@ -42,4 +42,6 @@
     .mapicon:hover{
         color: map-get($map-redes, colormap );
     }
+
+
 /*Footer*/
