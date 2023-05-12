@@ -62,7 +62,7 @@
     @include formato-textos(map-get($map-parrafos,font_hf),map-get($map-parrafos,size_index),map-get($map-parrafos,align_foot),map-get($map-parrafos,color)!important);
 }
 
-.fuenteCarrusel
+// .fuenteCarrusel
 .foottxt{
     @include formato-textos(map-get($map-parrafos,font_hf),map-get($map-parrafos,size_footer),map-get($map-parrafos,align_foot),map-get($map-parrafos,color));
     text-decoration: none;
