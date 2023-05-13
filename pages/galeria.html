@@ -19,175 +19,381 @@
     </head>
     <body>
         <!--Header-->
-        <header class="container-fluid header sticky-top">
-            <div class="row headercolor">
-            <div class="col-lg-12 col-xs-12">
-                <!--Navegador Responsive con boton-->
-                <nav class="navbar navbar-expand-lg navbar-light headercolor">
-                <a class="navbar-brand logopos" href="../index.html"><img src="../assets/img/logo.png" alt="logomain" class="img-fluid logo"></a>
-                <button class="hamburger hamburger--elastic navbar-toggler is-active" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-label="Menú" aria-controls="navbarNav">
-                    <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
+<header class="container-fluid header sticky-top">
+    <div class="row headercolor">
+        <div class="col-lg-12 col-xs-12">
+            <!--Navegador Responsive con boton-->
+            <nav class="navbar navbar-expand-lg navbar-light headercolor">
+                <a class="navbar-brand logopos" href="#"><img src="./assets/img/logo.png" alt="logomain"
+                        class="img-fluid logo"></a>
+                <button class="hamburger hamburger--elastic navbar-toggler is-active" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Menú" aria-controls="navbarNav">
+                    <span class="hamburger-box buttonhamb">
+                        <span class="hamburger-inner"></span>
                     </span>
                 </button>
                 <div class="navbar-collapse justify-content-end nav nav-tabs" id="navbarNav">
-                    <ul class="navbar-nav spanColor">
-                    <li class="nav-item"><a  class="nav-link links" href="../index.html">Inicio</a></li>
-                    <li class="nav-item"><a  class="nav-link links" href="#">Galeria<span class="sr-only">(current)</span></a></li>
-                    <li class="nav-item"><a  class="nav-link links" href="./contacto.html">Contacto</a></li>
+                    <ul class="navbar-nav spanColor nav nav-tabs">
+                        <li class="nav-item"><a class="nav-link links" href="./index.html">Inicio<span
+                                    class="sr-only">(current)</span></a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle links" href="" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Galería</a>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item " href="./pages/galeria.html">Todos los productos</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item " href="./pages/galeria.html">Cuchillos1</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item " href="./pages/galeria.html">Cuchillos2</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item " href="./pages/galeria.html">Cuchillos3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link links" href="./pages/contacto.html">Contacto</a></li>
                     </ul>
                 </div>
-                </nav>
-            </div>
-            </div>
-        </header>
+            </nav>
+        </div>
+    </div>
+</header>
         <!--Header-->
-        <main class="container-fluid bg-tatuador ">
-            <div class="container bgcolor">
-            <!--Titulo Galeria-->
-            <section class="bgbanner">
-                <h1 class="tittle">Galeria</h1>
-                <h2 class="parrMain text-center">Mirá todos nuestros trabajos e inspirate para hacerte el tuyo</h2>
-            </section>
-            <!--Titulo Galeria-->
-            <!--vista preliminar de diseños-->
-            <section class="flex-dinamic-row GalTitulo mb-4">
-                    <img class="imgtittle" src="../assets/img/titulo 1.png" alt="img para titulo de Galeria">
-                    <img class="imgtittle" src="../assets/img/titulo 2.png" alt="img para titulo de Galeria">
-                    <img class="imgtittle" src="../assets/img/titulo 3.png" alt="img para titulo de Galeria">
-                    <img class="imgtittle" src="../assets/img/titulo 4.png" alt="img para titulo de Galeria">
-            </section>
-            <!--vista preliminar de diseños-->
-            <!--Galería de tatuajes-->
-            <section class="container galeria"> <!--contenedorAnimacion">-->
-            <!-- Tatuaje1-->
-            <div class="galeria_imagenes galeria_imagenes--g1">
-                <img src="../assets/img/tatuajebrazo1.png" alt="tattoo1" data-bs-toggle="modal" data-bs-target="#tattoo1" class="imggaleria">
-            </div>
-            <div class="modal fade" id="tattoo1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <img src="../assets/img/tatuajebrazo1.png" class="gallery-item" alt="gallery">
-                    </div>
-                </div>
-            </div>
-            <!-- Tatuaje2-->
-            <div class="galeria_imagenes galeria_imagenes--g2">
-                <img src="../assets/img/tatuajebrazo2.png" alt="tattoo2" data-bs-toggle="modal" data-bs-target="#tattoo2" class="imggaleria">
-            </div>
-            <div class="modal fade" id="tattoo2">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <img src="../assets/img/tatuajebrazo2.png" class="gallery-item" alt="gallery">
-                    </div>
-                </div>
-            </div>
-            <!-- Tatuaje3-->
-            <div class="galeria_imagenes galeria_imagenes--g3">
-                <img src="../assets/img/tatuajediablo.jpg" alt="tattoo3" data-bs-toggle="modal" data-bs-target="#tattoo3" class="imggaleria">
-            </div>
-            <div class="modal fade" id="tattoo3">
-                <div class="modal-dialog modal-sm modal-dialog-centered">
-                    <div class="modal-content">
-                        <img src="../assets/img/tatuajediablo.jpg" class="gallery-item" alt="gallery">
-                    </div>
-                </div>
-            </div>
-            <!-- Tatuaje4-->
-            <div class="galeria_imagenes galeria_imagenes--g4">
-                <img src="../assets/img/tatuaje3.jpg" alt="tattoo4" data-bs-toggle="modal" data-bs-target="#tattoo4" class="imggaleria">
-            </div>
-            <div class="modal fade" id="tattoo4">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <img src="../assets/img/tatuaje3.jpg" class="gallery-item" alt="gallery">
-                    </div>
-                </div>
-            </div>
-            <!-- Tatuaje5-->
-            <div class="galeria_imagenes galeria_imagenes--g5">
-                <img src="../assets/img/tatuajebrazo4.png" alt="tattoo5" data-bs-toggle="modal" data-bs-target="#tattoo5" class="imggaleria">
-            </div>
-            <div class="modal fade test" id="tattoo5">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <img src="../assets/img/tatuajebrazo4.png" class="gallery-item" alt="gallery">
-                    </div>
-                </div>
-            </div> 
-            <!-- Tatuaje6-->
-            <div class="galeria_imagenes galeria_imagenes--g6">
-                <img src="../assets/img/tatuajebrazo3.jpg" alt="tattoo6" data-bs-toggle="modal" data-bs-target="#tattoo6" class="imggaleria">
-            </div>
-            <div class="modal fade" id="tattoo6">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <img src="../assets/img/tatuajebrazo3.jpg" class="gallery-item" alt="gallery">
-                    </div>
-                </div>
-            </div>
-            <!-- Tatuaje7-->
-            <div class="galeria_imagenes galeria_imagenes--g7">
-                <img src="../assets/img/tatuaje2.jpg" alt="tattoo7" data-bs-toggle="modal" data-bs-target="#tattoo7" class="imggaleria">
-            </div>
-            <div class="modal fade" id="tattoo7">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <img src="../assets/img/tatuaje2.jpg" class="gallery-item" alt="gallery">
-                    </div>
-                </div>
-            </div>
-            <!-- Tatuaje8-->
-            <div class="galeria_imagenes--g8 video">
-                <video class="videogaleria" preload="metadata" muted playsinline onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" poster="../assets/img/tatuajediablo.jpg">
-                    <source src="../assets/video/tatuajediablo.MOV" type="video/mp4"></source>
-                </video>
-            </div>
-            <!-- Tatuaje9-->
-            <div class="galeria_imagenes galeria_imagenes--g9">
-                <img src="../assets/img/tatuaje6.jpg" alt="tattoo9" data-bs-toggle="modal" data-bs-target="#tattoo9" class="imggaleria">
-            </div>
-            <div class="modal fade" id="tattoo9">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <img src="../assets/img/tatuaje6.jpg" class="gallery-item" alt="gallery">
-                    </div>
-                </div>
-            </div>
-            <!-- Tatuaje10--> 
-            <div class="galeria_imagenes galeria_imagenes--g10">
-                <img src="../assets/img/tatuaje1.jpg" alt="tattoo10" data-bs-toggle="modal" data-bs-target="#tattoo10" class="imggaleria">
-            </div>
-            <div class="modal fade" id="tattoo10">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <img src="../assets/img/tatuaje1.jpg" class="gallery-item" alt="gallery">
-                    </div>
-                </div>
-            </div>                 
-            </section>  
-            <!--Galería de tatuajes-->
+        <main class="container-fluid bg-dark">
+            <div class="container bg-body">
+                <nav class="nav">
+                    <a class="nav-link active text-body" aria-current="page" href="#">Madera</a>
+                    <a class="nav-link text-body " href="#">Combinados</a>
+                    <a class="nav-link text-body " href="#">Regionales</a>
+                    <a class="nav-link text-body " href="#" tabindex="-1" aria-disabled="true">Conjuntos</a>
+                </nav>
+                <!--SECTION MADERA-->
+                <section>
+                    <h2>Madera</h2>
+                    <div class="d-flex">
+                        <div id="myCarousel" class="carousel carouselgal slide pb-2" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                                    aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item carouselgal-item active">
+                                    <img src="../assets/img/Madera/Cuchi madera.JPG" class="d-block" alt="link_tatuadores">
+                                </div>
+                                <div class="carousel-item carouselgal-item">
+                                    <img src="../assets/img/Madera/Madera.jpg" class="d-block" alt="link_galeria">
+                                </div>
+                                <div class="carousel-item carouselgal-item">
+                                    <img src="../assets/img/Madera/Imagen 289.jpg" class="d-block" alt="link_cuidados">
+                                </div>
+                                <div class="carousel-item carouselgal-item">
+                                    <img src="../assets/img/Madera/Madera1.jpg" class="d-block" alt="link_cuidados">
+                                </div>
+                                <div class="carousel-item carouselgal-item">
+                                    <img src="../assets/img/Madera/Imagen 290.jpg" class="d-block" alt="link_cuidados">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div>
+                            <p>Cuchillos encabados en una o varias maderas con aplique de bronce y suela</p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Tamaño</th>
+                                        <th scope="col">Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">10cm</th>
+                                        <td>$  664</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">12cm</th>
+                                        <td>$  685</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">14cm</th>
+                                        <td>$  737</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">16cm</th>
+                                        <td>$  799</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">18cm</th>
+                                        <td>$  905</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="text-center"><a class="btn  btn-lg bg-dark text-white text-center" href="./pages/contacto.html">Leer Más</a></p>
+                        </div>
+                </section>
+                <!--SECTION COMBINADOS-->
+                <section>
+                    <h2>Combinados</h2>
+                    <div class="d-flex">
+                        <div id="myCarousel" class="carousel carouselgal slide pb-2" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                                    aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item carouselgal-item active">
+                                    <img src="../assets/img/Combinados/100_0373.JPG" class="d-block" alt="link_tatuadores">
+                                </div>
+                                <div class="carousel-item carouselgal-item">
+                                    <img src="../assets/img/Combinados/Ciervo y madera.jpg" class="d-block" alt="link_galeria">
+                                </div>
+                                <div class="carousel-item carouselgal-item">
+                                    <img src="../assets/img/Combinados/Combinados madera y regional.JPG" class="d-block" alt="link_cuidados">
+                                </div>
+                                <div class="carousel-item carouselgal-item">
+                                    <img src="../assets/img/Combinados/100_5596.JPG" class="d-block" alt="link_cuidados">
+                                </div>
+                                <div class="carousel-item carouselgal-item">
+                                    <img src="../assets/img/Combinados/Comb.colita.jpg" class="d-block" alt="link_cuidados">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div>
+                            <p>Cuchillos encabados en madera y combinados con: uña de ñandú, asta de vaca, hueso, asta de ciervo y cola de mulita o peludo,</p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Tamaño</th>
+                                        <th scope="col">Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">10cm</th>
+                                        <td>$  764</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">12cm</th>
+                                        <td>$  824</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">14cm</th>
+                                        <td>$  894</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">16cm</th>
+                                        <td>$  952</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">18cm</th>
+                                        <td>$  1085</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="text-center"><a class="btn  btn-lg bg-dark text-white text-center" href="./pages/contacto.html">Leer Más</a></p>
+                        </div>
+                </section>
+                <!--SECTION REGIONALES-->
+                <section>
+                    <h2>Regionales</h2>
+                    <div class="d-flex">
+                        <div id="myCarousel" class="carousel carouselgal slide pb-2" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item carouselgal-item active">
+                                    <img src="../assets/img/Regionales/regionales.jpg" class="d-block" alt="link_tatuadores">
+                                </div>
+                                <div class="carousel-item carouselgal-item">
+                                    <img src="../assets/img/Regionales/Cuchillos Hueso.jpg" class="d-block" alt="link_galeria">
+                                </div>
+                                <div class="carousel-item carouselgal-item">
+                                    <img src="../assets/img/Regionales/fotos 023.jpg" class="d-block"
+                                        alt="link_cuidados">
+                                </div>
+                                <div class="carousel-item carouselgal-item">
+                                    <img src="../assets/img/Regionales/regionales1.jpg" class="d-block" alt="link_cuidados">
+                                </div>
+                                <div class="carousel-item carouselgal-item">
+                                    <img src="../assets/img/Regionales/cuchillos1 080.jpg" class="d-block" alt="link_cuidados">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div>
+                            <p>Cuchillos encabados en asta de ciervo, asta de vaca, uña de ñandú, cola de mulita y hueso.</p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Tamaño</th>
+                                        <th scope="col">Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">10cm</th>
+                                        <td>$ 764</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">12cm</th>
+                                        <td>$ 824</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">14cm</th>
+                                        <td>$ 894</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">16cm</th>
+                                        <td>$ 952</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">18cm</th>
+                                        <td>$ 1085</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="text-center"><a class="btn  btn-lg bg-dark text-white text-center"
+                                    href="./pages/contacto.html">Leer Más</a></p>
+                        </div>
+                </section>
+                            <!--SECTION CONJUNTOS-->
+                <section>
+                    <h2>Conjuntos</h2>
+                    <div class="d-flex">
+                        <div id="myCarousel" class="carousel carouselgal slide pb-2" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item carouselgal-item active">
+                                    <img src="../assets/img/Conjuntos/Trinchar 16cm regional.JPG" class="d-block" alt="link_tatuadores">
+                                </div>
+                                <div class="carousel-item carouselgal-item">
+                                    <img src="../assets/img/Conjuntos/regalo2.jpg" class="d-block" alt="link_galeria">
+                                </div>
+                                <div class="carousel-item carouselgal-item">
+                                    <img src="../assets/img/Conjuntos/Pic nic.jpg" class="d-block"
+                                        alt="link_cuidados">
+                                </div>
+                                <div class="carousel-item carouselgal-item">
+                                    <img src="../assets/img/Conjuntos/Rosario 044.jpg" class="d-block" alt="link_cuidados">
+                                </div>
+                                <div class="carousel-item carouselgal-item">
+                                    <img src="../assets/img/Conjuntos/Tu y Yo 1.JPG" class="d-block" alt="link_cuidados">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div>
+                            <p>Cuchillos encabados en asta de ciervo, asta de vaca, uña de ñandú, cola de mulita y hueso.</p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Tamaño</th>
+                                        <th scope="col">Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">10cm</th>
+                                        <td>$ 764</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">12cm</th>
+                                        <td>$ 824</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">14cm</th>
+                                        <td>$ 894</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">16cm</th>
+                                        <td>$ 952</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">18cm</th>
+                                        <td>$ 1085</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="text-center"><a class="btn  btn-lg bg-dark text-white text-center"
+                                    href="./pages/contacto.html">Leer Más</a></p>
+                        </div>
+                </section>
+
             </div>
         </main>
         <!--footer-->
-        <footer class="piePag container-fluid" >
-            <div class="container row align-items-center">
+        <footer class="piePag container-fluid">
+            <div class="container row align-items-end">
                 <div class="col-sm">
                     <a href="#"><i class="fa-solid fa-circle-arrow-up btnup hvr-bob"></i></a>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm flex-dinamic-row ">
                     <a href="https://www.instagram.com/blackmoontattooba/" target="_blank">
                         <i class="fa-brands fa-instagram instagram hvr-wobble-skew"></i>
                     </a>
-                    <p class="foottxt pt-1">Paraguay 3605, Palermo, CABA <a href="./contacto.html#mapa"><i class="fa-solid fa-location-dot mapicon hvr-wobble-skew"></i></a></p>
-                    </div>
-                <div class="col-sm">
-                    
-                    <p class="foottxt">&copy;Todos los derechos reservados 2023</p>
-                    <p class="foottxt">Diseño: Haian D'Onofrio 
-                        <a href="https://www.linkedin.com/in/haian-donofrio-7293a358/" target="_blank"><i class="fa-brands fa-linkedin linkedin hvr-wobble-skew"></i></a>
-                    </p>  
+                    <!-- <p class="foottxt"> <a href="./pages/contacto.html#mapa"><i class="fa-solid fa-location-dot mapicon hvr-wobble-skew"></i></a></p> -->
+                </div>
+                <div class="col-sm align-self-end">
+        
+                    <p class="foottxt">&copy;Todos los derechos reservados 2023 Diseño: Hacia el Feliz
+                        <a href="https://www.linkedin.com/in/haian-donofrio-7293a358/" target="_blank"><i
+                                class="fa-brands fa-linkedin linkedin hvr-wobble-skew"></i></a>
+                    </p>
                 </div>
             </div>
         </footer>
