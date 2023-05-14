@@ -60,7 +60,7 @@
 }
 .galeria_imagenes:hover::before{
   /*  transform: scale(1) rotate(360deg)  ;*/
-     transform: scaleY(1);
+    transform: scaleY(1);
    /* transform: translate(0)  ;*/
 }
 
@@ -68,17 +68,15 @@
     padding-bottom : 1em;
     padding-top: 1em;
     display:grid;
-    grid-template-columns: repeat(6 , 1fr);
+    grid-template-columns: repeat(4 , 1fr);
     /*las filas automaticas van a ser de 160 pixeles*/
     grid-auto-rows: 260px;
-    grid-auto-columns: 100%;
+    grid-auto-columns: 20%;
     grid-template-areas: 
-    'img1 img2 img3 img3 img9 img9'
-    'img1 img2 img3 img3 img9 img9'
-    'img4 img4 img5 img6 img10 img10'
-    'img4 img4 img5 img6 img10 img10'
-    'img7 img7 img8 img8 img8 img8'
-    'img7 img7 img8 img8 img8 img8';
+    'img1 img1 img2 img2 img3 img3 img4 img4'
+    'img1 img1 img2 img2 img3 img3 img4 img4'
+    'img5 img5 img6 img6 img7 img7 img8 img8'
+    'img5 img5 img6 img6 img7 img7 img8 img8';
     gap : 0.1em;
 }
 
