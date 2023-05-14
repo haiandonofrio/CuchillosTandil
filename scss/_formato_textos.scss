@@ -1,0 +1,75 @@
+/*Titulos*/
+/*index*/
+.tittle{
+    @include formato-textos(map-get($map-titulo,font),map-get($map-titulo,size),map-get($map-titulo,align),map-get($map-titulo,color));
+    filter: brightness(150%);
+    text-shadow: $font-shadow;
+}
+
+.tittle2{
+    @include formato-textos(map-get($map-titulo2,font),map-get($map-titulo2,size),map-get($map-titulo2,align),map-get($map-titulo2,color));
+    font-weight: bold;
+    filter: brightness(150%)
+    }
+.tittleContacto{
+        @include formato-textos(map-get($map-Contacto,font),map-get($map-Contacto,size),map-get($map-Contacto,align),map-get($map-Contacto,color));
+        filter: brightness(150%);
+        // text-shadow: $font-shadow;
+    }
+
+.subti{
+    @include formato-textos(map-get($map-subti,font),map-get($map-subti,size),map-get($map-subti,align),map-get($map-subti,color));
+    filter: brightness(150%);
+    text-shadow: $font-shadow;
+    margin-left: 3%;
+    }
+
+/*Parrafos*/
+    .parr{
+        @include formato-textos(map-get($map-parrafos,font),map-get($map-parrafos,size),map-get($map-parrafos,align),map-get($map-parrafos,color));
+
+    .parrIndex{
+        @include formato-textos(map-get($map-parrafos,font_hf),map-get($map-parrafos,size_index),map-get($map-parrafos,align),map-get($map-parrafos,color));
+    }
+    .parrlink{
+        text-decoration: underline;
+        font-family: $font-parrafos;
+        color: map-get($map-parrafos,color)!important;
+    }
+}
+
+.parrMain{
+    @extend .parr;
+    font-family: $font-header_footer;
+    filter: brightness(180%) ;
+    /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+    text-shadow: $font-shadow;
+    
+}
+
+
+.parrCuidado{
+    @extend .parrMain;
+    font-size: map-get($map-parrafos , size_footer)
+}
+.parrNos{
+    @include formato-textos(map-get($map-parrafos,font_hf),map-get($map-parrafos,size),map-get($map-parrafos,align_foot),map-get($map-parrafos,color));  
+    padding-top: 15px;
+    filter: brightness(160%);
+}
+/*header text*/
+.links{
+    text-decoration: none;
+    font-weight: 120%;
+    border: 1mm solid;
+    border-color: rgb(0, 0, 0);
+
+    @include formato-textos(map-get($map-parrafos,font_hf),map-get($map-parrafos,size_index),map-get($map-parrafos,align_foot),map-get($map-parrafos,color)!important);
+}
+
+// .fuenteCarrusel
+.foottxt{
+    @include formato-textos(map-get($map-parrafos,font_hf),map-get($map-parrafos,size_footer),map-get($map-parrafos,align_foot),map-get($map-parrafos,color));
+    text-decoration: none;
+}
+/*Parrafos*/

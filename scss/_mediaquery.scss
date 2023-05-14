@@ -1,0 +1,63 @@
+/*Media Mobile */
+@media screen and (max-width: 767px) {
+	.subti {
+		text-align: center;
+	}
+    .parr {
+        font-size: 1em;
+    }
+    .subtibordes{
+        margin: 0 auto;
+    }
+    .logo{
+        margin-left: 100%;
+    }
+    .foottxt{
+        text-align: center;;
+    }
+    .instagram{
+        font-size: 2em;
+    }
+
+    .order-xs-first{
+        order: -1;
+    }
+    .tittle{
+        font-size: 5em;
+    }
+    .tittle2{
+        font-size: 3em;
+    }
+
+    .subti{
+        font-size: 2em;
+    }
+
+    .links{
+        font-size: 1em;
+    }
+
+    .parr{
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (max-width: 468px) {
+
+    
+    .header{
+        height: auto;
+        .headercolor{
+            height: auto;
+            .logo{
+                margin: 0 80%;
+                height: 10vh;
+            }
+        }
+    }
+
+    .links{
+        height: auto;
+    }
+}

@@ -1,0 +1,68 @@
+@mixin flex-dinamico($direction,$justify,$tipo,$align){
+    display:flex;
+    flex-direction:$direction;
+    justify-content:$justify;
+
+    @if $tipo == item{
+        align-items: $align;
+    }@else if $tipo == self{
+        align-self: $align;
+    }@else{}
+}
+
+.flex-dinamic{
+@include flex-dinamico(column,center,item,center);
+    }
+.flex-dinamic-row{
+    @include flex-dinamico(row,center,item,center);
+    }
+.flex-dummy{
+    @include flex-dinamico(column,center,$dummy,$dummy);
+    }
+
+@mixin redes($nombre){
+    /*puedo poner un if dentro de una clase tambien */
+    @if $nombre == instagram{
+        color: map-get($map-redes, color );
+        font-size: map-get($map-redes, size-instagram );
+        padding: 2% 0;
+    }@else if $nombre == up{
+        color: map-get($map-redes, color );
+        font-size: map-get($map-redes, size );
+        padding: 2% 0;
+    }@else if $nombre == linkedin{
+        color: map-get($map-redes, color );
+        font-size: map-get($map-redes, size );
+        padding-left: 2%;
+    }@else if $nombre == map{
+        color: map-get($map-redes, color );
+        font-size: map-get($map-redes, size );
+        padding-left: 2%;
+    }@else if $nombre == wpp{
+        color: map-get($map-redes, colorwpp );
+        position: fixed;
+        bottom: 10px;
+        right: 35px;
+        font-size: map-get($map-redes, size-wpp );
+        // padding-left: 2%;
+        z-index: 10;
+    
+    }
+}
+
+@mixin formato-textos($family,$size,$align,$color){
+    font-family: $family;
+    font-size: $size;
+    text-align: $align;
+    color: $color;
+}
+
+.whatsapp{
+    object-fit: cover;
+    // background-color: map-get($map-redes, colorwpp );
+    border-radius: 148px 148px 148px 148px;
+    -webkit-border-radius: 148px 148px 148px 148px;
+    -moz-border-radius: 148px 148px 148px 148px;
+    // background-color: rgba(144, 228, 88, 0.863);
+    @include redes(wpp);
+}

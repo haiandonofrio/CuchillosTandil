@@ -1,0 +1,97 @@
+/*crear variables*/
+
+/*Variable para pasar valor vacio en mixin*/
+$dummy: X;
+$font-parrafos: 'Creepster', cursive;
+$font-titulos: Gothic;
+$font-titulo2: 'Lobster', cursive;
+$font-titulo3: 'Roboto', sans-serif;
+$font-header_footer: 'Titillium Web', sans-serif;
+$font-shadow: -1px -1px 0px #000,
+ 0px -1px 0px #000,
+ 1px -1px 0px #000,
+-1px  0px 0px #000,
+ 1px  0px 0px #000,
+-1px  1px 0px #000,
+ 0px  1px 0px #000,
+ 1px  1px 0px #000,
+/* second layer at 2px */
+-2px -2px 0px #000,
+-1px -2px 0px #000,
+ 0px -2px 0px #000,
+ 1px -2px 0px #000,
+ 2px -2px 0px #000,
+ 2px -1px 0px #000,
+ 2px  0px 0px #000,
+ 2px  1px 0px #000,
+ 2px  2px 0px #000,
+ 1px  2px 0px #000,
+ 0px  2px 0px #000,
+-1px  2px 0px #000,
+-2px  2px 0px #000,
+-2px  1px 0px #000,
+-2px  0px 0px #000,
+-2px -1px 0px #000;
+
+$map-color: (
+primario: red,
+secundario: black,
+redes: #e6dfe2,
+gris:#666F6B,
+bgcolor: url(../assets/img/bg-black.jpg) repeat,
+bgtatuador: url(../assets/img/fondotatuador.jpg) repeat,
+// bgbanner: url(../assets/img/output-onlinepngtools.png) repeat,
+bgborde: url(../assets/img/borde2.png) ,
+bgnosotros: url(../assets/img/bgnosotros.png) repeat,
+insta: linear-gradient(#fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%),
+boton: #2d2d2da5,
+);
+
+$map-titulo: (
+    font : $font-titulos,
+    size : 7em,
+    align : center,
+    color:  rgb(206, 202, 202)
+);
+
+$map-titulo2: (
+    font : $font-titulo2,
+    size : 2em,
+    color:  rgb(206, 202, 202)
+);
+$map-Contacto: (
+    font : $font-titulo3,
+    size : 3em,
+    color:  rgb(0, 0, 0)
+);
+
+
+$map-subti: (
+    font : $font-parrafos,
+    size : 3em,
+    align : left,
+    color:  rgb(196, 196, 196)
+);
+
+$map-parrafos: (
+    font : $font-parrafos,
+    font_hf : $font-header_footer,
+    size : 1.5em,
+    size_index : 2em,
+    size_footer: 0.8em,
+    align : left,
+    align_foot : right,
+    color:  rgb(196, 196, 196)
+);
+
+$map-redes: (
+    color : map-get($map-color , redes ),
+    colorinsta: rgb(210, 154, 163),
+    colorlkdin: #0e76a8,
+    colormap: rgb(216, 49, 49),
+    colorwpp: #25d366,
+    colorup: rgba(167, 164, 164, 0.956),
+    size : 1.5em,
+    size-instagram : 2em,
+    size-wpp : 2em
+);
