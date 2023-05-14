@@ -5,6 +5,7 @@ $dummy: X;
 $font-parrafos: 'Creepster', cursive;
 $font-titulos: Gothic;
 $font-titulo2: 'Lobster', cursive;
+$font-titulo3: 'Roboto', sans-serif;
 $font-header_footer: 'Titillium Web', sans-serif;
 $font-shadow: -1px -1px 0px #000,
  0px -1px 0px #000,
@@ -36,9 +37,10 @@ $map-color: (
 primario: red,
 secundario: black,
 redes: #e6dfe2,
+gris:#666F6B,
 bgcolor: url(../assets/img/bg-black.jpg) repeat,
 bgtatuador: url(../assets/img/fondotatuador.jpg) repeat,
-bgbanner: url(../assets/img/output-onlinepngtools.png) repeat,
+// bgbanner: url(../assets/img/output-onlinepngtools.png) repeat,
 bgborde: url(../assets/img/borde2.png) ,
 bgnosotros: url(../assets/img/bgnosotros.png) repeat,
 insta: linear-gradient(#fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%),
@@ -57,6 +59,12 @@ $map-titulo2: (
     size : 2em,
     color:  rgb(206, 202, 202)
 );
+$map-Contacto: (
+    font : $font-titulo3,
+    size : 3em,
+    color:  rgb(0, 0, 0)
+);
+
 
 $map-subti: (
     font : $font-parrafos,

@@ -11,6 +11,11 @@
     font-weight: bold;
     filter: brightness(150%)
     }
+.tittleContacto{
+        @include formato-textos(map-get($map-Contacto,font),map-get($map-Contacto,size),map-get($map-Contacto,align),map-get($map-Contacto,color));
+        filter: brightness(150%);
+        // text-shadow: $font-shadow;
+    }
 
 .subti{
     @include formato-textos(map-get($map-subti,font),map-get($map-subti,size),map-get($map-subti,align),map-get($map-subti,color));
