@@ -26,6 +26,18 @@
   flex-direction: column;
   justify-content: center; }
 
+.whatsapp {
+  object-fit: cover;
+  border-radius: 148px 148px 148px 148px;
+  -webkit-border-radius: 148px 148px 148px 148px;
+  -moz-border-radius: 148px 148px 148px 148px;
+  /*puedo poner un if dentro de una clase tambien */
+  color: #25d366;
+  position: fixed;
+  bottom: 10px;
+  right: 35px;
+  font-size: 2em; }
+
 :root {
   --animate-delay: 1s; }
 
@@ -93,12 +105,12 @@
   text-shadow: -1px -1px 0px #000, 0px -1px 0px #000, 1px -1px 0px #000, -1px 0px 0px #000, 1px 0px 0px #000, -1px 1px 0px #000, 0px 1px 0px #000, 1px 1px 0px #000, -2px -2px 0px #000, -1px -2px 0px #000, 0px -2px 0px #000, 1px -2px 0px #000, 2px -2px 0px #000, 2px -1px 0px #000, 2px 0px 0px #000, 2px 1px 0px #000, 2px 2px 0px #000, 1px 2px 0px #000, 0px 2px 0px #000, -1px 2px 0px #000, -2px 2px 0px #000, -2px 1px 0px #000, -2px 0px 0px #000, -2px -1px 0px #000; }
 
 .parrCuidado {
-  font-size: 1em; }
+  font-size: 0.8em; }
 
 .parrNos {
   font-family: "Titillium Web", sans-serif;
   font-size: 1.5em;
-  text-align: center;
+  text-align: right;
   color: #c4c4c4;
   padding-top: 15px;
   filter: brightness(160%); }
@@ -111,13 +123,13 @@
   border-color: black;
   font-family: "Titillium Web", sans-serif;
   font-size: 2em;
-  text-align: center;
+  text-align: right;
   color: #c4c4c4 !important; }
 
-.fuenteCarrusel .foottxt {
+.foottxt {
   font-family: "Titillium Web", sans-serif;
-  font-size: 1em;
-  text-align: center;
+  font-size: 0.8em;
+  text-align: right;
   color: #c4c4c4;
   text-decoration: none; }
 
@@ -132,14 +144,14 @@
   color: white;
   z-index: 100;
   opacity: 100%;
-  height: 12vh; }
+  height: 10vh; }
   .header .headercolor {
     background: #1c1a1a;
     background: linear-gradient(90deg, #1c1a1a 0%, #1b1b1a 40%, #151615 80%);
     background: -webkit-linear-gradient(90deg, #1c1a1a 0%, #111110 40%, #101110 80%);
     background: -moz-linear-gradient(90deg, #1c1a1a 0%, #383832 40%, #191b19 80%);
     color: white;
-    height: 12vh; }
+    height: 10vh; }
     .header .headercolor .logopos {
       padding-left: 15%; }
       .header .headercolor .logopos .logo {
@@ -175,7 +187,7 @@
 .btnup {
   /*puedo poner un if dentro de una clase tambien */
   color: #e6dfe2;
-  font-size: 2em;
+  font-size: 1.5em;
   padding: 2% 0; }
 
 .btnup:hover {
@@ -237,7 +249,6 @@
 
 /* Carousel*/
 .carousel {
-  margin-bottom: 4rem;
   width: 100% !important; }
   .carousel .carousel-item {
     height: 40rem; }
@@ -256,7 +267,29 @@
   left: 0;
   filter: contrast(150%), brightness(120%);
   min-width: 100%;
-  height: 40rem; }
+  height: 42rem; }
+
+/* Carousel*/
+.carouselgal {
+  width: 30rem !important; }
+  .carouselgal .carouselgal-item {
+    height: 30rem; }
+    .carouselgal .carouselgal-item .carousel-caption {
+      bottom: 3rem;
+      z-index: 10;
+      /*Botones*/ }
+  .carouselgal .bgBoton {
+    background-color: #5d5b5b !important; }
+
+.carouselgal-item > img {
+  position: absolute;
+  object-fit: cover;
+  background-color: black;
+  top: 0;
+  left: 0;
+  filter: contrast(150%), brightness(120%);
+  width: 30rem;
+  height: 30rem; }
 
 /*Nosotros*/
 .tatuador {

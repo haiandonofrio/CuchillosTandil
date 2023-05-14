@@ -78,9 +78,9 @@ $map-parrafos: (
     font_hf : $font-header_footer,
     size : 1.5em,
     size_index : 2em,
-    size_footer: 1em,
+    size_footer: 0.8em,
     align : left,
-    align_foot : center,
+    align_foot : right,
     color:  rgb(196, 196, 196)
 );
 
@@ -89,7 +89,9 @@ $map-redes: (
     colorinsta: rgb(210, 154, 163),
     colorlkdin: #0e76a8,
     colormap: rgb(216, 49, 49),
+    colorwpp: #25d366,
     colorup: rgba(167, 164, 164, 0.956),
     size : 1.5em,
-    size-instagram : 2em
+    size-instagram : 2em,
+    size-wpp : 2em
 );
