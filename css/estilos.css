@@ -55,6 +55,12 @@
   font-weight: bold;
   filter: brightness(150%); }
 
+.tittleContacto {
+  font-family: "Roboto", sans-serif;
+  font-size: 3em;
+  color: black;
+  filter: brightness(150%); }
+
 .subti {
   font-family: "Creepster", cursive;
   font-size: 3em;
@@ -218,11 +224,15 @@
   background: url(../assets/img/fondotatuador.jpg) repeat;
   z-index: -10; }
 
+.bg-contactos {
+  background: #666F6B;
+  z-index: -10; }
+
 .bgimg {
   background: url(../assets/img/borde2.png) no-repeat; }
 
 .bgbanner {
-  background: url(../assets/img/output-onlinepngtools.png) repeat;
+  background: #e6dfe2;
   padding-bottom: 5%; }
 
 /* Carousel*/
