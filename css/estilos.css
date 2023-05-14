@@ -36,7 +36,8 @@
   position: fixed;
   bottom: 10px;
   right: 35px;
-  font-size: 2em; }
+  font-size: 2em;
+  z-index: 10; }
 
 :root {
   --animate-delay: 1s; }
