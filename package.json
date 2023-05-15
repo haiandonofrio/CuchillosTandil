@@ -1,7 +1,7 @@
 {
-  "name": "proyecto-blackmoon-tattoo---haian-donofrio",
+  "name": "mwtandil---haian-donofrio",
   "version": "1.0.0",
-  "description": "prueba de SASS",
+  "description": "Cuchillos mwtandil",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -1,0 +1,3 @@
+[submodule "mwtandil"]
+	path = mwtandil
+	url = https://github.com/haiandonofrio/CuchillosTandil.git
