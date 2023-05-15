@@ -54,12 +54,10 @@
 /*Titulos*/
 /*index*/
 .tittle {
-  font-family: Gothic;
+  font-family: "Lobster", cursive;
   font-size: 7em;
-  text-align: center;
   color: #cecaca;
-  filter: brightness(150%);
-  text-shadow: -1px -1px 0px #000, 0px -1px 0px #000, 1px -1px 0px #000, -1px 0px 0px #000, 1px 0px 0px #000, -1px 1px 0px #000, 0px 1px 0px #000, 1px 1px 0px #000, -2px -2px 0px #000, -1px -2px 0px #000, 0px -2px 0px #000, 1px -2px 0px #000, 2px -2px 0px #000, 2px -1px 0px #000, 2px 0px 0px #000, 2px 1px 0px #000, 2px 2px 0px #000, 1px 2px 0px #000, 0px 2px 0px #000, -1px 2px 0px #000, -2px 2px 0px #000, -2px 1px 0px #000, -2px 0px 0px #000, -2px -1px 0px #000; }
+  filter: brightness(150%); }
 
 .tittle2 {
   font-family: "Lobster", cursive;
@@ -197,7 +195,7 @@
 .instagram {
   /*puedo poner un if dentro de una clase tambien */
   color: #e6dfe2;
-  font-size: 2em;
+  font-size: 1.5em;
   padding: 2% 0; }
 
 .instagram:hover {
@@ -301,7 +299,7 @@
 .instagramNos {
   /*puedo poner un if dentro de una clase tambien */
   color: #e6dfe2;
-  font-size: 2em;
+  font-size: 1.5em;
   padding: 2% 0;
   font-size: 3em; }
 
@@ -376,11 +374,11 @@
   padding-bottom: 1em;
   padding-top: 1em;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   /*las filas automaticas van a ser de 160 pixeles*/
   grid-auto-rows: 260px;
-  grid-auto-columns: 100%;
-  grid-template-areas: 'img1 img2 img3 img3 img9 img9' 'img1 img2 img3 img3 img9 img9' 'img4 img4 img5 img6 img10 img10' 'img4 img4 img5 img6 img10 img10' 'img7 img7 img8 img8 img8 img8' 'img7 img7 img8 img8 img8 img8';
+  grid-auto-columns: 12.5%;
+  grid-template-areas: 'img1 img1 img2 img2 img3 img3 img4 img4' 'img1 img1 img2 img2 img3 img3 img4 img4' 'img5 img5 img6 img6 img7 img7 img8 img8' 'img5 img5 img6 img6 img7 img7 img8 img8';
   gap: 0.1em; }
 
 .galeria_imagenes--g1 {

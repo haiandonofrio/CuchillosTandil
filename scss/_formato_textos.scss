@@ -1,9 +1,9 @@
 /*Titulos*/
 /*index*/
 .tittle{
-    @include formato-textos(map-get($map-titulo,font),map-get($map-titulo,size),map-get($map-titulo,align),map-get($map-titulo,color));
+    @include formato-textos(map-get($map-titulo2,font),map-get($map-titulo,size),map-get($map-titulo2,align),map-get($map-titulo,color));
     filter: brightness(150%);
-    text-shadow: $font-shadow;
+    // text-shadow: $font-shadow;
 }
 
 .tittle2{
